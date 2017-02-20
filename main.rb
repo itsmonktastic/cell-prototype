@@ -5,6 +5,7 @@ class Command
   SENSE_SIGNAL = 'SENSE_SIGNAL'
   SENSE_CELL = 'SENSE_CELL'
   JUMP_IF_EQUAL = 'JUMP_IF_EQUAL'
+  SUPPRESS = 'SUPPRESS'
 
   class Direction
     attr_accessor :string_name
@@ -20,18 +21,35 @@ class Command
   LEFT = Direction.new('LEFT')
   RIGHT = Direction.new('RIGHT')
 
+  class Color
+    attr_accessor :string_name
+    def initialize(string_name)
+      self.string_name = string_name
+    end
+    def to_s
+      self.string_name
+    end
+  end
+  RED = Color.new('RED')
+  BLUE = Color.new('BLUE')
+  GREEN = Color.new('GREEN')
+  YELLOW = Color.new('YELLOW')
+
   PARAMETERS = {
     SPLIT => [Direction],
     SEND_SIGNAL => [Direction],
     SENSE_SIGNAL => [Direction],
     SENSE_CELL => [Direction],
     JUMP_IF_EQUAL => [Fixnum],
+    SUPPRESS => [Direction, Color],
   }
 
-  attr_accessor :type, :parameters
+  attr_accessor :type, :parameters, :color, :active
 
-  def initialize(type, parameters=[])
+  def initialize(type, parameters=[], color=nil)
     self.type = type
+    self.color = color
+    self.active = true
     
     if parameters.length != PARAMETERS[type].length
       raise "Expected #{PARAMETERS[type].length} parameters, got #{parameters.length}"
@@ -49,15 +67,21 @@ class Command
   def to_s
     "#{self.type}"
   end
+
+  def pretty_color
+    self.color.string_name[0]
+  end
 end
 
 class Cell
-  attr_accessor :commands, :id, :program_counter, :is_new
+  attr_accessor :commands, :id, :program_counter, :is_new, :row, :col
 
-  def initialize()
+  def initialize(row, col)
     self.commands = []
     self.program_counter = 0
     self.is_new = true
+    self.row = row
+    self.col = col
   end
 
   def pretty_id
@@ -72,21 +96,20 @@ class World
 
   def initialize(zygote:)
     self.grid = Array.new(DEFAULT_GRID_SIZE) { Array.new(DEFAULT_GRID_SIZE) }
-    middle = DEFAULT_GRID_SIZE / 2
     self.next_cell_id = 0
     self.cells = []
 
-    self.add_cell(zygote, middle, middle)
+    self.add_cell(zygote)
   end
 
-  def add_cell(cell, row, col)
-    return if row < 0 || row >= grid.length
-    return if col < 0 || col >= grid[0].length
+  def add_cell(cell)
+    return if cell.row < 0 || cell.row >= grid.length
+    return if cell.col < 0 || cell.col >= grid[0].length
 
-    current_contents = self.grid[row][col]
+    current_contents = self.grid[cell.row][cell.col]
     return unless current_contents.nil?
 
-    self.grid[row][col] = cell
+    self.grid[cell.row][cell.col] = cell
     cell.id = self.next_cell_id
     self.next_cell_id += 1
     self.cells << cell
@@ -116,6 +139,12 @@ end
 def print_cell(cell)
   printf("%s :\n", cell.pretty_id)
   cell.commands.each_with_index do |command, i|
+    next unless command.active
+    if command.color.nil?
+      print "  "
+    else
+      print "#{command.pretty_color} "
+    end
     if cell.program_counter == i
       print "-> "
     else
@@ -130,39 +159,66 @@ def print_cell(cell)
   end
 end
 
-def simulate_cell_cycle(world, row, col)
-  cell = world.grid[row][col]
-  return if cell.nil? || cell.is_new
+def simulate_cell_cycle(world, cell)
+  return if cell.is_new || cell.commands.none?(&:active)
+  while !cell.commands[cell.program_counter].active
+    cell.program_counter += 1
+  end
   command = cell.commands[cell.program_counter]
   cell.program_counter += 1
   cell.program_counter %= cell.commands.length
 
   case command.type
   when Command::SPLIT
-    new_cell = Cell.new
-    new_cell.commands = cell.commands.dup
-    case command.parameters[0]
-    when Command::UP
-      world.add_cell(new_cell, row-1, col)
-    when Command::RIGHT
-      world.add_cell(new_cell, row, col+1)
-    when Command::DOWN
-      world.add_cell(new_cell, row+1, col)
-    when Command::LEFT
-      world.add_cell(new_cell, row, col-1)
-    else
-      raise "unkown direction #{command.parameters}"
+    existing_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
+    return unless existing_cell.nil?
+    row, col = relative_location(cell.row, cell.col, command.parameters[0])
+    new_cell = Cell.new(row, col)
+    new_cell.commands = cell.commands.map(&:dup)
+    world.add_cell(new_cell)
+  when Command::SUPPRESS
+    other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
+    unless other_cell.nil?
+      other_cell.commands.each_with_index do |other_command, i|
+        if other_command.color == command.parameters[1]
+          other_command.active = false
+        end
+      end
+      if other_cell.commands.any?(&:active)
+        while !other_cell.commands[other_cell.program_counter].active
+          other_cell.program_counter += 1
+        end
+      end
     end
   else
     raise "unknown command #{command.type}"
   end
 end
 
+def cell_at_relative_location(world, row, col, direction)
+  new_row, new_col = relative_location(row, col, direction)
+  row = world.grid[new_row]
+  row[new_col] unless row.nil?
+end
+
+def relative_location(row, col, direction)
+  case direction
+  when Command::UP
+    [row-1, col]
+  when Command::RIGHT
+    [row, col+1]
+  when Command::DOWN
+    [row+1, col]
+  when Command::LEFT
+    [row, col-1]
+  else
+    raise "unkown direction #{command.parameters}"
+  end
+end
+
 def simulate_world_cycle(world)
-  world.grid.each_with_index do |cells, row|
-    cells.each_with_index do |cell, col|
-      simulate_cell_cycle(world, row, col)
-    end
+  world.cells.each do |cell|
+    simulate_cell_cycle(world, cell)
   end
   world.grid.each do |cells|
     cells.each do |cell|
@@ -173,11 +229,23 @@ def simulate_world_cycle(world)
   end
 end
 
-zygote = Cell.new()
-zygote.commands << Command.new(Command::SPLIT, [Command::UP])
-zygote.commands << Command.new(Command::SPLIT, [Command::RIGHT])
-zygote.commands << Command.new(Command::SPLIT, [Command::DOWN])
+zygote = Cell.new(4, 4)
+
+# Simple grow
+# zygote.commands << Command.new(Command::SPLIT, [Command::UP])
+# zygote.commands << Command.new(Command::SPLIT, [Command::RIGHT])
+# zygote.commands << Command.new(Command::SPLIT, [Command::DOWN])
+# zygote.commands << Command.new(Command::SPLIT, [Command::LEFT])
+
+# Specialize
+zygote.commands << Command.new(Command::SPLIT, [Command::UP], Command::RED)
+zygote.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::BLUE], Command::RED)
+zygote.commands << Command.new(Command::SPLIT, [Command::DOWN], Command::BLUE)
+zygote.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::RED], Command::BLUE)
 zygote.commands << Command.new(Command::SPLIT, [Command::LEFT])
+zygote.commands << Command.new(Command::SPLIT, [Command::RIGHT])
+
+
 zygote.is_new = false
 world = World.new(zygote: zygote)
 

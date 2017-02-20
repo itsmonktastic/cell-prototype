@@ -1,0 +1,71 @@
+#!/usr/bin/env ruby
+require 'bundler/setup'
+
+require 'thor'
+require_relative 'engine.rb'
+
+def challenges
+  Dir.entries("challenges").reject { |e| e[0] == '.' }
+end
+
+class Challenge < Thor
+  desc "list", "list names of all challenges"
+  def list
+    puts challenges
+  end
+
+  desc "describe CHALLENGE", "Print of details for CHALLENGE"
+  def describe(challenge)
+    target = File.read("challenges/#{challenge}/target.txt")
+    puts "Target:"
+    puts target
+  end
+
+  desc "attempt CHALLENGE PROGRAM", "Run PROGRAM on CHALLENGE and measure record results"
+  def attempt(challenge, program)
+    unless challenges.include?(challenge)
+      raise "no exiting challenge named #{challenge}"
+    end
+
+    FileUtils.mkdir_p("challenges/#{challenge}/#{program}")
+    program_path = "challenges/#{challenge}/#{program}/#{program}.cell"
+    FileUtils.touch(program_path)
+    program_bytes = File.read(program_path)
+    if program_bytes.strip.length == 0
+      puts "Write your program in #{program_path}"
+      return
+    end
+    zygote = cell_from_file(program_path)
+
+    target = target_from_file("challenges/#{challenge}/target.txt")
+
+    log_path = "challenges/#{challenge}/#{program}/log.txt"
+    world = nil
+    cycles = nil
+    File.open(log_path, 'w') do |log|
+      world, cycles = simulate(zygote, target, log)
+    end
+
+    differences = count_differences(target, world.grid)
+    if differences == 0
+      puts "SUCCESS! (in #{cycles} cycles)"
+    else
+      puts "Result does not match (after #{cycles cycles})"
+      puts "#{differences} differences."
+    end
+
+    update_leaderboard(challenge, program, differences, cycles)
+
+    puts "target:"
+    print_target(target)
+    puts "actual:"
+    print_grid(world.grid, $stdout)
+    puts "Logs in #{log_path}"
+  end
+end
+ 
+class CLI < Thor
+  register(Challenge, 'challenge', 'challenge <command>', 'Challenges')
+end
+ 
+CLI.start(ARGV)

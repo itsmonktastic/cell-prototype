@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 class Command
   SPLIT = 'SPLIT'
   SEND_SIGNAL = 'SEND_SIGNAL'
@@ -31,6 +30,7 @@ class Command
       self.string_name
     end
   end
+  NONE = Color.new('NONE')
   RED = Color.new('RED')
   BLUE = Color.new('BLUE')
   GREEN = Color.new('GREEN')
@@ -48,7 +48,7 @@ class Command
 
   attr_accessor :type, :parameters, :color, :active
 
-  def initialize(type, parameters=[], color=nil)
+  def initialize(type, parameters=[], color=NONE)
     self.type = type
     self.color = color
     self.active = true
@@ -118,46 +118,50 @@ class World
   end
 end
 
-def print_world(world)
-  world.grid.each do |row|
+def print_grid(grid, log)
+  grid.each do |row|
     row.each do |cell|
       if cell.nil?
-        print ".."
+        log.write("..")
       else
-        print cell.pretty_id
+        log.write(cell.pretty_id)
       end
-      print " "
+      log.write(" ")
     end
-    print "\n"
-  end
-
-  print "\n"
-
-  world.cells.each do |cell|
-    print_cell(cell)
+    log.write("\n")
   end
 end
 
-def print_cell(cell)
-  printf("%s :\n", cell.pretty_id)
+def print_world(world, log)
+  print_grid(world.grid, log)
+
+  log.write("\n")
+
+  world.cells.each do |cell|
+    print_cell(cell, log)
+  end
+end
+
+def print_cell(cell, log)
+  log.write(sprintf("%s :\n", cell.pretty_id))
   cell.commands.each_with_index do |command, i|
     next unless command.active
     if command.color.nil?
-      print "  "
+      log.write("  ")
     else
-      print "#{command.pretty_color} "
+      log.write("#{command.pretty_color} ")
     end
     if cell.program_counter == i
-      print "-> "
+      log.write("-> ")
     else
-      print "   "
+      log.write("   ")
     end
-    print command.to_s
+    log.write(command.to_s)
     if command.parameters.length > 0
-      print "(#{command.parameters.join(", ")})"
+      log.write("(#{command.parameters.join(", ")})")
     end
 
-    print "\n"
+    log.write("\n")
   end
 end
 
@@ -233,73 +237,120 @@ def simulate_world_cycle(world)
   end
 end
 
+COLOR_MAP = {
+  '-' => Command::NONE,
+}
 
-# Simple grow
-simple_grow = Cell.new(4, 4)
-simple_grow.commands << Command.new(Command::SPLIT, [Command::UP])
-simple_grow.commands << Command.new(Command::SPLIT, [Command::RIGHT])
-simple_grow.commands << Command.new(Command::SPLIT, [Command::DOWN])
-simple_grow.commands << Command.new(Command::SPLIT, [Command::LEFT])
+COMMAND_MAP = {
+  'SPLIT' => Command::SPLIT,
+}
 
-# Specialize
-specialized = Cell.new(4, 4)
-specialized.commands << Command.new(Command::SPLIT, [Command::UP], Command::RED)
-specialized.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::BLUE], Command::YELLOW)
-specialized.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::YELLOW], Command::YELLOW)
-specialized.commands << Command.new(Command::SPLIT, [Command::DOWN], Command::BLUE)
-specialized.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::RED], Command::YELLOW)
-specialized.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::YELLOW], Command::YELLOW)
-specialized.commands << Command.new(Command::SPLIT, [Command::LEFT])
-specialized.commands << Command.new(Command::SPLIT, [Command::RIGHT])
+ARGUMENT_MAP = {
+  'UP' => Command::UP,
+  'DOWN' => Command::DOWN,
+}
 
-# Also suppress self
-specialized2 = Cell.new(4, 4)
-specialized2.commands << Command.new(Command::SPLIT, [Command::UP], Command::RED)
-specialized2.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::BLUE], Command::YELLOW)
-specialized2.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::YELLOW], Command::YELLOW)
-specialized2.commands << Command.new(Command::SPLIT, [Command::DOWN], Command::BLUE)
-specialized2.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::RED], Command::YELLOW)
-specialized2.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::YELLOW], Command::YELLOW)
-specialized2.commands << Command.new(Command::SUPPRESS, [Command::SELF, Command::YELLOW], Command::YELLOW)
-specialized2.commands << Command.new(Command::SPLIT, [Command::LEFT])
-specialized2.commands << Command.new(Command::SPLIT, [Command::RIGHT])
-
-# Fully specialize
-specialized3 = Cell.new(4, 4)
-# Red : up
-# Blue : down
-# Yellow : suppress
-# Green : right
-# Purple : left
-specialized3.commands << Command.new(Command::SPLIT, [Command::UP], Command::RED)
-specialized3.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::BLUE], Command::YELLOW)
-specialized3.commands << Command.new(Command::SPLIT, [Command::DOWN], Command::BLUE)
-specialized3.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::RED], Command::YELLOW)
-specialized3.commands << Command.new(Command::SPLIT, [Command::LEFT], Command::PURPLE)
-specialized3.commands << Command.new(Command::SUPPRESS, [Command::LEFT, Command::GREEN], Command::YELLOW)
-specialized3.commands << Command.new(Command::SPLIT, [Command::RIGHT], Command::GREEN)
-specialized3.commands << Command.new(Command::SUPPRESS, [Command::RIGHT, Command::PURPLE], Command::YELLOW)
-
-def analyze(zygote)
-  world = World.new(zygote: zygote)
-  20.times do |i|
-    simulate_world_cycle(world)
-    print_world(world)
+def cell_from_file(program_path)
+  lines = File.read(program_path).split("\n")
+  commands = lines.map do |line|
+    parts = line.split(" ")
+    color = COLOR_MAP[parts[0]]
+    raise "unknown color #{parts[0]}" if color.nil?
+    command_type = COMMAND_MAP[parts[1]]
+    raise "unknown command #{parts[1]}" if command_type.nil?
+    arguments = parts.drop(2).map { |a| ARGUMENT_MAP[a] }
+    Command.new(command_type, arguments, color)
   end
-  puts "\n\n"
+
+  cell = Cell.new(4, 4)
+  cell.commands = commands
+
+  cell
 end
 
-def test_dna(zygote, dna_name)
-  puts dna_name
-  world = World.new(zygote: zygote)
-  20.times do |i|
-    simulate_world_cycle(world)
-    puts "#{i} : #{world.cells.count}"
+def target_from_file(target_path)
+  lines = File.read(target_path).split("\n")
+  lines.map do |line|
+    line.split(" ").map do |spot|
+      if spot == ".."
+        false
+      elsif spot == "XX"
+        true
+      else
+        raise "Unknown symbol #{spot}"
+      end
+    end
   end
-  puts "\n\n"
 end
 
-test_dna(simple_grow, 'simple_grow')
-test_dna(specialized, 'specialized')
-test_dna(specialized2, 'specialized2')
-test_dna(specialized3, 'specialized3')
+def simulate(zygote, target, log)
+  world = World.new(zygote: zygote)
+  cycles_elapsed = 0
+  20.times do |i|
+    simulate_world_cycle(world)
+    print_world(world, log)
+    cycles_elapsed += 1
+    differences = count_differences(target, world.grid)
+    if differences == 0
+      break
+    end
+  end
+  log.write("\n\n")
+
+  [world, cycles_elapsed]
+end
+
+def print_target(target)
+  result = target.map do |row|
+    row.map do |val|
+      if val
+        "XX"
+      else
+        ".."
+      end
+    end.join(" ")
+  end.join("\n")
+
+  puts result
+end
+
+def count_differences(target, actual)
+  differences = 0
+  target.each_with_index do |row, i|
+    row.each_with_index do |target_val, j|
+      if !(actual[i][j].nil?) != target_val
+        differences += 1
+      end
+    end
+  end
+
+  differences
+end
+
+def parse_leaderboard(challenge)
+  path = "challenges/#{challenge}/leaderboard.txt"
+  FileUtils.touch(path)
+  lines = File.read(path).split("\n")
+  leaderboard = {}
+  lines.each do |line|
+    parts = line.split(" ")
+    leaderboard[parts[0]] = leaderboard[parts[1]]
+  end
+  leaderboard
+end
+
+def save_leaderboard(challenge, leaderboard)
+  path = "challenges/#{challenge}/leaderboard.txt"
+  data = leaderboard.entries.sort_by do |key, value|
+    [value[:differences], value[:cycles]]
+  end.map do |key, value|
+    "#{key} #{value}"
+  end.join("\n")
+  File.write(path, data)
+end
+
+def update_leaderboard(challenge, program, differences, cycles)
+  leaderboard = parse_leaderboard(challenge)
+  leaderboard[program] = {differences: differences, cycles: cycles}
+  save_leaderboard(challenge, leaderboard)
+end

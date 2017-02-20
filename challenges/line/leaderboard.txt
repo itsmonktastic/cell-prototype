@@ -1,0 +1,1 @@
+solution1 {:differences=>0, :cycles=>9}

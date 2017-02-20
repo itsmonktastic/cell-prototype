@@ -5,6 +5,7 @@ class Command
   SENSE_CELL = 'SENSE_CELL'
   JUMP_IF_EQUAL = 'JUMP_IF_EQUAL'
   SUPPRESS = 'SUPPRESS'
+  DIE = 'DIE'
 
   class Direction
     attr_accessor :string_name
@@ -36,6 +37,7 @@ class Command
   GREEN = Color.new('GREEN')
   YELLOW = Color.new('YELLOW')
   PURPLE = Color.new('PURPLE')
+  ORANGE = Color.new('ORANGE')
 
   PARAMETERS = {
     SPLIT => [Direction],
@@ -44,6 +46,7 @@ class Command
     SENSE_CELL => [Direction],
     JUMP_IF_EQUAL => [Fixnum],
     SUPPRESS => [Direction, Color],
+    DIE => [],
   }
 
   attr_accessor :type, :parameters, :color, :active
@@ -169,6 +172,7 @@ def simulate_cell_cycle(world, cell)
   return if cell.is_new || cell.commands.none?(&:active)
   while !cell.commands[cell.program_counter].active
     cell.program_counter += 1
+    cell.program_counter %= cell.commands.length
   end
   command = cell.commands[cell.program_counter]
   cell.program_counter += 1
@@ -196,6 +200,9 @@ def simulate_cell_cycle(world, cell)
         end
       end
     end
+  when Command::DIE
+    world.grid[cell.row][cell.col] = nil
+    world.cells.delete(cell)
   else
     raise "unknown command #{command.type}"
   end
@@ -244,11 +251,13 @@ COLOR_MAP = {
   'Y' => Command::YELLOW,
   'G' => Command::GREEN,
   'P' => Command::PURPLE,
+  'O' => Command::ORANGE,
 }
 
 COMMAND_MAP = {
   'SPLIT' => Command::SPLIT,
   'SUPPRESS' => Command::SUPPRESS,
+  'DIE' => Command::DIE,
 }
 
 ARGUMENT_MAP = {

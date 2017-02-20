@@ -254,6 +254,7 @@ ARGUMENT_MAP = {
   'DOWN' => Command::DOWN,
   'RIGHT' => Command::RIGHT,
   'LEFT' => Command::LEFT,
+  'SELF' => Command::SELF,
 }.merge(COLOR_MAP)
 
 def cell_from_file(program_path)

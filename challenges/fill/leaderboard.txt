@@ -1,2 +1,4 @@
+specialized3 0 21
 specialized1 0 26
 simple 0 29
+specialized2 0 30

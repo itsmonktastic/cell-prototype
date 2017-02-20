@@ -242,6 +242,8 @@ COLOR_MAP = {
   'R' => Command::RED,
   'B' => Command::BLUE,
   'Y' => Command::YELLOW,
+  'G' => Command::GREEN,
+  'P' => Command::PURPLE,
 }
 
 COMMAND_MAP = {

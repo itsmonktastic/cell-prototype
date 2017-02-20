@@ -239,10 +239,14 @@ end
 
 COLOR_MAP = {
   '-' => Command::NONE,
+  'R' => Command::RED,
+  'B' => Command::BLUE,
+  'Y' => Command::YELLOW,
 }
 
 COMMAND_MAP = {
   'SPLIT' => Command::SPLIT,
+  'SUPPRESS' => Command::SUPPRESS,
 }
 
 ARGUMENT_MAP = {
@@ -250,7 +254,7 @@ ARGUMENT_MAP = {
   'DOWN' => Command::DOWN,
   'RIGHT' => Command::RIGHT,
   'LEFT' => Command::LEFT,
-}
+}.merge(COLOR_MAP)
 
 def cell_from_file(program_path)
   lines = File.read(program_path).split("\n")
@@ -333,32 +337,4 @@ def count_differences(target, actual)
   end
 
   differences
-end
-
-def parse_leaderboard(challenge)
-  path = "challenges/#{challenge}/leaderboard.txt"
-  FileUtils.touch(path)
-  lines = File.read(path).split("\n")
-  leaderboard = {}
-  lines.each do |line|
-    parts = line.split(" ")
-    leaderboard[parts[0]] = leaderboard[parts[1]]
-  end
-  leaderboard
-end
-
-def save_leaderboard(challenge, leaderboard)
-  path = "challenges/#{challenge}/leaderboard.txt"
-  data = leaderboard.entries.sort_by do |key, value|
-    [value[:differences], value[:cycles]]
-  end.map do |key, value|
-    "#{key} #{value}"
-  end.join("\n")
-  File.write(path, data)
-end
-
-def update_leaderboard(challenge, program, differences, cycles)
-  leaderboard = parse_leaderboard(challenge)
-  leaderboard[program] = {differences: differences, cycles: cycles}
-  save_leaderboard(challenge, leaderboard)
 end

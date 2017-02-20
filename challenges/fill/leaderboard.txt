@@ -1,1 +1,2 @@
-simple {:differences=>0, :cycles=>29}
+specialized1 0 26
+simple 0 29

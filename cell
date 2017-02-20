@@ -1,11 +1,64 @@
 #!/usr/bin/env ruby
 require 'bundler/setup'
 
+require 'terminal-table'
 require 'thor'
+
 require_relative 'engine.rb'
 
 def challenges
   Dir.entries("challenges").reject { |e| e[0] == '.' }
+end
+
+def parse_leaderboard(challenge)
+  path = "challenges/#{challenge}/leaderboard.txt"
+  FileUtils.touch(path)
+  lines = File.read(path).split("\n")
+  leaderboard = {}
+  lines.each do |line|
+    parts = line.split(" ")
+    leaderboard[parts[0]] = {
+      differences: parts[1].to_i,
+      cycles: parts[2].to_i,
+    }
+  end
+  leaderboard
+end
+
+def save_leaderboard(challenge, leaderboard)
+  path = "challenges/#{challenge}/leaderboard.txt"
+  data = leaderboard.entries.sort_by do |key, value|
+    "#{value[:differences]} #{value[:cycles]}"
+  end.map do |key, value|
+    "#{key} #{value[:differences]} #{value[:cycles]}"
+  end.join("\n")
+  File.write(path, data)
+end
+
+def update_leaderboard(challenge, program, differences, cycles)
+  leaderboard = parse_leaderboard(challenge)
+  leaderboard[program] = {differences: differences, cycles: cycles}
+  save_leaderboard(challenge, leaderboard)
+end
+
+def print_leaderboard(challenge, you=nil)
+  leaderboard = parse_leaderboard(challenge)
+  rows = leaderboard.entries.sort_by do |key, value|
+    "#{value[:differences]} #{value[:cycles]}"
+  end.map do |key, value|
+    if key == you
+      key = "* " + key
+    else
+      key = "  " + key
+    end
+    [key, value[:differences], value[:cycles]]
+  end
+  table = Terminal::Table.new(
+    headings: ["Solution", "Errors", "Cycles"],
+    rows: rows,
+  )
+  puts "LEADERBOARD"
+  puts table
 end
 
 class Challenge < Thor
@@ -72,7 +125,8 @@ class Challenge < Thor
     print_target(target)
     puts "actual:"
     print_grid(world.grid, $stdout)
-    puts "Logs in #{log_path}"
+    puts "Logs in #{log_path}\n\n"
+    print_leaderboard(challenge, program)
   end
 end
  

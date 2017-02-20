@@ -7,6 +7,7 @@ class Command
   SUPPRESS = 'SUPPRESS'
   DIE = 'DIE'
   LABEL = 'LABEL'
+  SLEEP = 'SLEEP'
 
   class Direction
     attr_accessor :string_name
@@ -49,6 +50,7 @@ class Command
     SUPPRESS => [Direction, Color],
     DIE => [],
     LABEL => [String],
+    SLEEP => [],
   }
 
   attr_accessor :type, :parameters, :color, :active
@@ -213,6 +215,8 @@ def simulate_cell_cycle(world, cell)
     return if no_active_commands?(cell)
     advance_program_counter(cell)
     simulate_cell_cycle(world, cell)
+  when Command::SLEEP
+    # Do nothing
   else
     raise "unknown command #{command.type}"
   end
@@ -303,6 +307,7 @@ COMMAND_MAP = {
   'SENSE_CELL' => Command::SENSE_CELL,
   'JUMP_IF_TRUE' => Command::JUMP_IF_TRUE,
   'LABEL' => Command::LABEL,
+  'SLEEP' => Command::SLEEP,
 }
 
 ARGUMENT_MAP = {

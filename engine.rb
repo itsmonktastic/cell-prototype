@@ -177,13 +177,9 @@ end
 
 def simulate_cell_cycle(world, cell)
   return if cell.is_new || cell.commands.none?(&:active)
-  while !cell.commands[cell.program_counter].active
-    cell.program_counter += 1
-    cell.program_counter %= cell.commands.length
-  end
+  move_past_inactive_commands(cell)
   command = cell.commands[cell.program_counter]
-  cell.program_counter += 1
-  cell.program_counter %= cell.commands.length
+  advance_program_counter(cell)
 
   case command.type
   when Command::SPLIT
@@ -201,11 +197,7 @@ def simulate_cell_cycle(world, cell)
           other_command.active = false
         end
       end
-      if other_cell.commands.any?(&:active)
-        while !other_cell.commands[other_cell.program_counter].active
-          other_cell.program_counter += 1
-        end
-      end
+      move_past_inactive_commands(other_cell)
     end
   when Command::DIE
     world.grid[cell.row][cell.col] = nil
@@ -234,9 +226,13 @@ end
 
 def advance_program_counter(cell)
   return if no_active_commands?(cell)
-
   cell.program_counter += 1
   cell.program_counter %= cell.commands.length
+  move_past_inactive_commands(cell)
+end
+
+def move_past_inactive_commands(cell)
+  return if no_active_commands?(cell)
   while !cell.commands[cell.program_counter].active || cell.commands[cell.program_counter].type == Command::LABEL
     cell.program_counter += 1
     cell.program_counter %= cell.commands.length

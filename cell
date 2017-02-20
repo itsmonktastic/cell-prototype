@@ -60,9 +60,7 @@ end
 
 def print_leaderboard(challenge, you=nil)
   leaderboard = parse_leaderboard(challenge)
-  rows = leaderboard.entries.sort_by do |key, value|
-    "#{value[:differences]} #{value[:cycles]}"
-  end.map do |program, value|
+  rows = sort_leaderboard(leaderboard).map do |program, value|
     if program == you
       prefix = "* "
     else

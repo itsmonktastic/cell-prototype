@@ -1,0 +1,202 @@
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+R -> SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 :
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R -> SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 :
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 02 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R -> SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 :
+02 :
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 02 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R -> SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 :
+02 :
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 02 .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R -> SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 :
+02 :
+03 :
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 02 .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R -> SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 :
+02 :
+03 :
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. 04 00 02 .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R -> SUPPRESS(LEFT, RED)
+01 :
+02 :
+03 :
+04 :
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+
+

@@ -1,0 +1,871 @@
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+01 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 02 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+01 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+02 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+03 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. 01 05 .. .. .. 
+.. .. .. .. 00 02 .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+01 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+02 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+03 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+04 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+05 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+06 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+.. .. .. .. 10 .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. 03 09 .. .. .. 
+.. .. .. .. 01 05 .. .. .. 
+.. .. .. 07 00 02 08 .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+01 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+02 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+03 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+04 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+05 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+06 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+07 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+08 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+09 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+10 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+.. .. .. .. 10 .. .. .. .. 
+.. .. .. .. 06 14 .. .. .. 
+.. .. .. .. 03 09 .. .. .. 
+.. .. .. 11 01 05 13 .. .. 
+.. .. .. 07 00 02 08 .. .. 
+.. .. .. .. 04 12 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+01 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+02 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+03 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+04 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+05 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+06 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+07 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+08 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+09 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+10 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+11 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+12 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+13 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+14 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+.. .. .. .. 10 19 .. .. .. 
+.. .. .. .. 06 14 .. .. .. 
+.. .. .. 15 03 09 18 .. .. 
+.. .. .. 11 01 05 13 .. .. 
+.. .. .. 07 00 02 08 17 .. 
+.. .. .. .. 04 12 .. .. .. 
+.. .. .. .. 16 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+01 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+02 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+03 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+04 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+05 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+06 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+07 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+08 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+09 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+10 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+11 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+12 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+13 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+14 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+15 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+16 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+17 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+18 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+19 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+.. .. .. .. 10 19 .. .. .. 
+.. .. .. 21 06 14 24 .. .. 
+.. .. .. 15 03 09 18 .. .. 
+.. .. .. 11 01 05 13 23 .. 
+.. .. .. 07 00 02 08 17 .. 
+.. .. .. 20 04 12 22 .. .. 
+.. .. .. .. 16 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+01 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+02 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+03 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+04 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+05 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+06 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+07 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+08 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+09 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+10 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+11 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+12 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+13 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+14 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+15 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+16 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+17 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+18 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+19 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+20 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+21 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+22 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+23 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+24 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+.. .. .. 26 10 19 30 .. .. 
+.. .. .. 21 06 14 24 .. .. 
+.. .. .. 15 03 09 18 29 .. 
+.. .. .. 11 01 05 13 23 .. 
+.. .. 25 07 00 02 08 17 28 
+.. .. .. 20 04 12 22 .. .. 
+.. .. .. .. 16 27 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+01 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+02 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+03 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+04 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+05 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+06 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+07 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+08 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+09 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+10 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+11 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+12 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+13 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+14 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+15 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+16 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+17 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+18 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+19 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+20 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+21 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+22 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+23 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+24 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+25 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+26 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+27 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+28 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+29 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+30 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+.. .. .. 26 10 19 30 .. .. 
+.. .. .. 21 06 14 24 35 .. 
+.. .. .. 15 03 09 18 29 .. 
+.. .. 31 11 01 05 13 23 34 
+.. .. 25 07 00 02 08 17 28 
+.. .. .. 20 04 12 22 33 .. 
+.. .. .. .. 16 27 .. .. .. 
+.. .. .. .. 32 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+01 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+02 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+03 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+04 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+05 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+06 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+07 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+08 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+09 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+10 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+11 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+12 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+13 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+14 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+15 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+16 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+17 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+18 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+19 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+  -> SPLIT(LEFT)
+20 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+21 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+22 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+23 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+24 :
+     SPLIT(UP)
+     SPLIT(RIGHT)
+  -> SPLIT(DOWN)
+     SPLIT(LEFT)
+25 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+26 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+27 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+28 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+29 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+30 :
+     SPLIT(UP)
+  -> SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+31 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+32 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+33 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+34 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+35 :
+  -> SPLIT(UP)
+     SPLIT(RIGHT)
+     SPLIT(DOWN)
+     SPLIT(LEFT)
+
+41

@@ -1,0 +1,777 @@
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R -> SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+B    SPLIT(DOWN)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+Y -> SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+B    SPLIT(DOWN)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+01 :
+R -> SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+B    SPLIT(DOWN)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y -> SUPPRESS(UP, YELLOW)
+B    SPLIT(DOWN)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+01 :
+R    SPLIT(UP)
+Y -> SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+02 :
+R -> SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. 03 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+B -> SPLIT(DOWN)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+01 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+02 :
+R    SPLIT(UP)
+Y -> SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+03 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+04 :
+R -> SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+.. .. .. .. 08 .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. 07 02 .. .. .. .. 
+.. .. .. 03 01 06 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+B    SPLIT(DOWN)
+Y -> SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+01 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+02 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y -> SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+03 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+04 :
+R    SPLIT(UP)
+Y -> SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+05 :
+R -> SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+B    SPLIT(DOWN)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+06 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+07 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+08 :
+R -> SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+.. .. .. .. 08 .. .. .. .. 
+.. .. .. 10 04 .. .. .. .. 
+.. .. .. 07 02 11 .. .. .. 
+.. .. 09 03 01 06 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y -> SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+01 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+02 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+03 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+04 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+05 :
+Y    SUPPRESS(UP, BLUE)
+Y -> SUPPRESS(UP, YELLOW)
+B    SPLIT(DOWN)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+06 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+07 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+08 :
+R    SPLIT(UP)
+Y -> SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+09 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+10 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+11 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+.. .. .. 15 08 .. .. .. .. 
+.. .. .. 10 04 12 .. .. .. 
+.. .. 14 07 02 11 .. .. .. 
+.. .. 09 03 01 06 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. 13 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y -> SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+01 :
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+02 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y -> SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+03 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+04 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+05 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+06 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+07 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+08 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y -> SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+09 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+10 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+11 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+12 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+13 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+14 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+15 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+.. .. .. 15 08 20 .. .. .. 
+.. .. 19 10 04 12 .. .. .. 
+.. .. 14 07 02 11 .. .. .. 
+.. 18 09 03 01 06 17 .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. 16 05 .. .. .. .. 
+.. .. .. .. 13 .. .. .. .. 
+.. .. .. .. 21 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+  -> SPLIT(LEFT)
+     SPLIT(RIGHT)
+01 :
+  -> SPLIT(LEFT)
+     SPLIT(RIGHT)
+02 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y -> SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+03 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+04 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+05 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+06 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+07 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+08 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+09 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+10 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+11 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+12 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+13 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+14 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+15 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+16 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+17 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+18 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+19 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+20 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+21 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+.. .. 27 15 08 20 .. .. .. 
+.. .. 19 10 04 12 .. .. .. 
+.. 26 14 07 02 11 24 .. .. 
+.. 18 09 03 01 06 17 .. .. 
+.. .. .. 22 00 .. .. .. .. 
+.. .. .. 16 05 23 .. .. .. 
+.. .. .. 25 13 .. .. .. .. 
+.. .. .. .. 21 .. .. .. .. 
+.. .. .. .. 28 .. .. .. .. 
+
+00 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+01 :
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+02 :
+R    SPLIT(UP)
+  -> SPLIT(LEFT)
+     SPLIT(RIGHT)
+03 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+04 :
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+05 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+06 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+07 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+08 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y -> SUPPRESS(DOWN, YELLOW)
+Y    SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+09 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+10 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+11 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+12 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+13 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+14 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+15 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+16 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+17 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+18 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+19 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+20 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+21 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+22 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+23 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+24 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+25 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+26 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+27 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+28 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+.. .. 27 15 08 20 .. .. .. 
+.. 34 19 10 04 12 30 .. .. 
+.. 26 14 07 02 11 24 .. .. 
+33 18 09 03 01 06 17 .. .. 
+.. .. .. 22 00 29 .. .. .. 
+.. .. 32 16 05 23 .. .. .. 
+.. .. .. 25 13 31 .. .. .. 
+.. .. .. 35 21 .. .. .. .. 
+.. .. .. .. 28 .. .. .. .. 
+
+00 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+01 :
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+02 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+03 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+04 :
+  -> SPLIT(LEFT)
+     SPLIT(RIGHT)
+05 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+06 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+07 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+08 :
+R    SPLIT(UP)
+Y    SUPPRESS(UP, BLUE)
+Y    SUPPRESS(UP, YELLOW)
+Y    SUPPRESS(DOWN, RED)
+Y    SUPPRESS(DOWN, YELLOW)
+Y -> SUPPRESS(SELF, YELLOW)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+09 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+10 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+11 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+12 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+13 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+14 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+15 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+16 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+17 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+18 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+19 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+20 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+21 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+  -> SPLIT(RIGHT)
+22 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+23 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+24 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+25 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+26 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+27 :
+R    SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+28 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+29 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+30 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+31 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+32 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+33 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+34 :
+R -> SPLIT(UP)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+35 :
+B    SPLIT(DOWN)
+     SPLIT(LEFT)
+     SPLIT(RIGHT)
+
+44

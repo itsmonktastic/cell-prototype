@@ -20,6 +20,7 @@ class Command
   DOWN = Direction.new('DOWN')
   LEFT = Direction.new('LEFT')
   RIGHT = Direction.new('RIGHT')
+  SELF = Direction.new('SELF')
 
   class Color
     attr_accessor :string_name
@@ -211,6 +212,8 @@ def relative_location(row, col, direction)
     [row+1, col]
   when Command::LEFT
     [row, col-1]
+  when Command::SELF
+    [row, col]
   else
     raise "unkown direction #{command.parameters}"
   end
@@ -229,29 +232,46 @@ def simulate_world_cycle(world)
   end
 end
 
-zygote = Cell.new(4, 4)
 
 # Simple grow
-# zygote.commands << Command.new(Command::SPLIT, [Command::UP])
-# zygote.commands << Command.new(Command::SPLIT, [Command::RIGHT])
-# zygote.commands << Command.new(Command::SPLIT, [Command::DOWN])
-# zygote.commands << Command.new(Command::SPLIT, [Command::LEFT])
+simple_grow = Cell.new(4, 4)
+simple_grow.commands << Command.new(Command::SPLIT, [Command::UP])
+simple_grow.commands << Command.new(Command::SPLIT, [Command::RIGHT])
+simple_grow.commands << Command.new(Command::SPLIT, [Command::DOWN])
+simple_grow.commands << Command.new(Command::SPLIT, [Command::LEFT])
 
 # Specialize
-zygote.commands << Command.new(Command::SPLIT, [Command::UP], Command::RED)
-zygote.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::BLUE], Command::RED)
-zygote.commands << Command.new(Command::SPLIT, [Command::DOWN], Command::BLUE)
-zygote.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::RED], Command::BLUE)
-zygote.commands << Command.new(Command::SPLIT, [Command::LEFT])
-zygote.commands << Command.new(Command::SPLIT, [Command::RIGHT])
+specialized = Cell.new(4, 4)
+specialized.commands << Command.new(Command::SPLIT, [Command::UP], Command::RED)
+specialized.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::BLUE], Command::YELLOW)
+specialized.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::YELLOW], Command::YELLOW)
+specialized.commands << Command.new(Command::SPLIT, [Command::DOWN], Command::BLUE)
+specialized.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::RED], Command::YELLOW)
+specialized.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::YELLOW], Command::YELLOW)
+specialized.commands << Command.new(Command::SPLIT, [Command::LEFT])
+specialized.commands << Command.new(Command::SPLIT, [Command::RIGHT])
 
+specialized2 = Cell.new(4, 4)
+specialized2.commands << Command.new(Command::SPLIT, [Command::UP], Command::RED)
+specialized2.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::BLUE], Command::YELLOW)
+specialized2.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::YELLOW], Command::YELLOW)
+specialized2.commands << Command.new(Command::SPLIT, [Command::DOWN], Command::BLUE)
+specialized2.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::RED], Command::YELLOW)
+specialized2.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::YELLOW], Command::YELLOW)
+specialized2.commands << Command.new(Command::SUPPRESS, [Command::SELF, Command::YELLOW], Command::YELLOW)
+specialized2.commands << Command.new(Command::SPLIT, [Command::LEFT])
+specialized2.commands << Command.new(Command::SPLIT, [Command::RIGHT])
 
-zygote.is_new = false
-world = World.new(zygote: zygote)
-
-10.times do
-  print_world(world)
-  simulate_world_cycle(world)
-  print "\n"
+def test_dna(zygote, dna_name)
+  puts dna_name
+  world = World.new(zygote: zygote)
+  20.times do |i|
+    simulate_world_cycle(world)
+    puts "#{i} : #{world.cells.count}"
+  end
+  puts "\n\n"
 end
-print_world(world)
+
+test_dna(simple_grow, 'simple_grow')
+test_dna(specialized, 'specialized')
+test_dna(specialized2, 'specialized2')

@@ -29,7 +29,7 @@ class Challenge < Thor
     end
     FileUtils.mkdir("challenges/#{challenge}")
     target_path = "challenges/#{challenge}/target.txt"
-    FileUtils.cp('challenges/sample.txt', target_path)
+    FileUtils.cp('fixtures/sample.txt', target_path)
     puts "Fill in #{target_path}"
   end
 

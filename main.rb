@@ -35,6 +35,7 @@ class Command
   BLUE = Color.new('BLUE')
   GREEN = Color.new('GREEN')
   YELLOW = Color.new('YELLOW')
+  PURPLE = Color.new('PURPLE')
 
   PARAMETERS = {
     SPLIT => [Direction],
@@ -251,6 +252,7 @@ specialized.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::
 specialized.commands << Command.new(Command::SPLIT, [Command::LEFT])
 specialized.commands << Command.new(Command::SPLIT, [Command::RIGHT])
 
+# Also suppress self
 specialized2 = Cell.new(4, 4)
 specialized2.commands << Command.new(Command::SPLIT, [Command::UP], Command::RED)
 specialized2.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::BLUE], Command::YELLOW)
@@ -261,6 +263,31 @@ specialized2.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command:
 specialized2.commands << Command.new(Command::SUPPRESS, [Command::SELF, Command::YELLOW], Command::YELLOW)
 specialized2.commands << Command.new(Command::SPLIT, [Command::LEFT])
 specialized2.commands << Command.new(Command::SPLIT, [Command::RIGHT])
+
+# Fully specialize
+specialized3 = Cell.new(4, 4)
+# Red : up
+# Blue : down
+# Yellow : suppress
+# Green : right
+# Purple : left
+specialized3.commands << Command.new(Command::SPLIT, [Command::UP], Command::RED)
+specialized3.commands << Command.new(Command::SUPPRESS, [Command::UP, Command::BLUE], Command::YELLOW)
+specialized3.commands << Command.new(Command::SPLIT, [Command::DOWN], Command::BLUE)
+specialized3.commands << Command.new(Command::SUPPRESS, [Command::DOWN, Command::RED], Command::YELLOW)
+specialized3.commands << Command.new(Command::SPLIT, [Command::LEFT], Command::PURPLE)
+specialized3.commands << Command.new(Command::SUPPRESS, [Command::LEFT, Command::GREEN], Command::YELLOW)
+specialized3.commands << Command.new(Command::SPLIT, [Command::RIGHT], Command::GREEN)
+specialized3.commands << Command.new(Command::SUPPRESS, [Command::RIGHT, Command::PURPLE], Command::YELLOW)
+
+def analyze(zygote)
+  world = World.new(zygote: zygote)
+  20.times do |i|
+    simulate_world_cycle(world)
+    print_world(world)
+  end
+  puts "\n\n"
+end
 
 def test_dna(zygote, dna_name)
   puts dna_name
@@ -275,3 +302,4 @@ end
 test_dna(simple_grow, 'simple_grow')
 test_dna(specialized, 'specialized')
 test_dna(specialized2, 'specialized2')
+test_dna(specialized3, 'specialized3')

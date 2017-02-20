@@ -1,0 +1,684 @@
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+R -> SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+R    SENSE_CELL(LEFT)
+R -> JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R -> SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R -> SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+01 (0):
+R -> SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N -> LABEL(up)
+01 (1):
+R    SENSE_CELL(LEFT)
+R -> JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R -> SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. 02 .. .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R -> SUPPRESS(SELF, RED)
+02 (0):
+R -> SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. 02 .. .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N -> LABEL(up)
+02 (0):
+R    SENSE_CELL(LEFT)
+R -> JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. 02 .. .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R -> SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R -> SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+03 (0):
+R -> SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N -> LABEL(up)
+03 (1):
+R    SENSE_CELL(LEFT)
+R -> JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R -> SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. 04 .. .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R -> SUPPRESS(SELF, RED)
+04 (0):
+R -> SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. 04 .. .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N -> LABEL(up)
+04 (0):
+R    SENSE_CELL(LEFT)
+R -> JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. 04 .. .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R -> SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R -> SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+05 (0):
+R -> SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+N -> LABEL(up)
+05 (1):
+R    SENSE_CELL(LEFT)
+R -> JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+N    LABEL(up)
+05 (1):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R -> SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. 06 .. 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+N    LABEL(up)
+05 (1):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R -> SUPPRESS(SELF, RED)
+06 (0):
+R -> SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. 06 .. 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+N    LABEL(up)
+05 (1):
+N -> LABEL(up)
+06 (0):
+R    SENSE_CELL(LEFT)
+R -> JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. 06 .. 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+N    LABEL(up)
+05 (1):
+N    LABEL(up)
+06 (0):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R -> SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. 06 07 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+N    LABEL(up)
+05 (1):
+N    LABEL(up)
+06 (0):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R -> SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+07 (0):
+R -> SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. 06 07 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+N    LABEL(up)
+05 (1):
+N    LABEL(up)
+06 (0):
+N -> LABEL(up)
+07 (1):
+R    SENSE_CELL(LEFT)
+R -> JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. 06 07 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+N    LABEL(up)
+05 (1):
+N    LABEL(up)
+06 (0):
+N    LABEL(up)
+07 (1):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R -> SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+.. .. .. .. .. .. .. .. 08 
+.. .. .. .. .. .. .. 06 07 
+.. .. .. .. .. .. 04 05 .. 
+.. .. .. .. .. 02 03 .. .. 
+.. .. .. .. 00 01 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    LABEL(up)
+01 (1):
+N    LABEL(up)
+02 (0):
+N    LABEL(up)
+03 (1):
+N    LABEL(up)
+04 (0):
+N    LABEL(up)
+05 (1):
+N    LABEL(up)
+06 (0):
+N    LABEL(up)
+07 (1):
+R    SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R -> SUPPRESS(SELF, RED)
+08 (0):
+R -> SENSE_CELL(LEFT)
+R    JUMP_IF_TRUE(up)
+R    SPLIT(RIGHT)
+R    SUPPRESS(SELF, RED)
+N    LABEL(up)
+R    SPLIT(UP)
+R    SUPPRESS(SELF, RED)
+
+

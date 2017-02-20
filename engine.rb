@@ -3,9 +3,10 @@ class Command
   SEND_SIGNAL = 'SEND_SIGNAL'
   SENSE_SIGNAL = 'SENSE_SIGNAL'
   SENSE_CELL = 'SENSE_CELL'
-  JUMP_IF_EQUAL = 'JUMP_IF_EQUAL'
+  JUMP_IF_TRUE = 'JUMP_IF_TRUE'
   SUPPRESS = 'SUPPRESS'
   DIE = 'DIE'
+  LABEL = 'LABEL'
 
   class Direction
     attr_accessor :string_name
@@ -44,9 +45,10 @@ class Command
     SEND_SIGNAL => [Direction],
     SENSE_SIGNAL => [Direction],
     SENSE_CELL => [Direction],
-    JUMP_IF_EQUAL => [Fixnum],
+    JUMP_IF_TRUE => [String],
     SUPPRESS => [Direction, Color],
     DIE => [],
+    LABEL => [String],
   }
 
   attr_accessor :type, :parameters, :color, :active
@@ -79,7 +81,7 @@ class Command
 end
 
 class Cell
-  attr_accessor :commands, :id, :program_counter, :is_new, :row, :col
+  attr_accessor :commands, :id, :program_counter, :is_new, :row, :col, :register
 
   def initialize(row, col)
     self.commands = []
@@ -87,10 +89,15 @@ class Cell
     self.is_new = true
     self.row = row
     self.col = col
+    self.register = false
   end
 
   def pretty_id
     sprintf("%02d", self.id)
+  end
+
+  def pretty_register
+    self.register ? '1' : '0'
   end
 end
 
@@ -146,7 +153,7 @@ def print_world(world, log)
 end
 
 def print_cell(cell, log)
-  log.write(sprintf("%s :\n", cell.pretty_id))
+  log.write(sprintf("%s (%s):\n", cell.pretty_id, cell.pretty_register))
   cell.commands.each_with_index do |command, i|
     next unless command.active
     if command.color.nil?
@@ -203,9 +210,48 @@ def simulate_cell_cycle(world, cell)
   when Command::DIE
     world.grid[cell.row][cell.col] = nil
     world.cells.delete(cell)
+  when Command::SENSE_CELL
+    other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
+    cell.register = !(other_cell.nil?)
+  when Command::JUMP_IF_TRUE
+    if cell.register
+      jump_cell(cell, command.parameters[0])
+    end
+  when Command::LABEL
+    return if no_active_commands?(cell)
+    advance_program_counter(cell)
+    simulate_cell_cycle(world, cell)
   else
     raise "unknown command #{command.type}"
   end
+end
+
+def no_active_commands?(cell)
+  cell.commands.all? do |command|
+    !command.active || command.type == Command::LABEL
+  end
+end
+
+def advance_program_counter(cell)
+  return if no_active_commands?(cell)
+
+  cell.program_counter += 1
+  cell.program_counter %= cell.commands.length
+  while !cell.commands[cell.program_counter].active || cell.commands[cell.program_counter].type == Command::LABEL
+    cell.program_counter += 1
+    cell.program_counter %= cell.commands.length
+  end
+end
+
+def jump_cell(cell, label)
+  cell.commands.each_with_index do |command, i|
+    if command.type == Command::LABEL && command.parameters[0] == label
+      cell.program_counter = i
+      advance_program_counter(cell)
+      return
+    end
+  end
+  raise "Unknown label #{label}"
 end
 
 def cell_at_relative_location(world, row, col, direction)
@@ -258,6 +304,9 @@ COMMAND_MAP = {
   'SPLIT' => Command::SPLIT,
   'SUPPRESS' => Command::SUPPRESS,
   'DIE' => Command::DIE,
+  'SENSE_CELL' => Command::SENSE_CELL,
+  'JUMP_IF_TRUE' => Command::JUMP_IF_TRUE,
+  'LABEL' => Command::LABEL,
 }
 
 ARGUMENT_MAP = {
@@ -276,12 +325,15 @@ def cell_from_file(program_path)
     raise "unknown color #{parts[0]}" if color.nil?
     command_type = COMMAND_MAP[parts[1]]
     raise "unknown command #{parts[1]}" if command_type.nil?
-    arguments = parts.drop(2).map do |part|
-      a = ARGUMENT_MAP[part]
-      if a.nil?
-        raise "Unable to parse #{part}"
+    arguments = parts.drop(2)
+    if command_type != Command::LABEL && command_type != Command::JUMP_IF_TRUE
+      arguments = arguments.map do |s|
+        a = ARGUMENT_MAP[s]
+        if a.nil?
+          raise "Unable to parse #{s}"
+        end
+        a
       end
-      a
     end
     Command.new(command_type, arguments, color)
   end

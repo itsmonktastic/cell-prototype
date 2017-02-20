@@ -362,6 +362,8 @@ end
 def simulate(zygote, target, log)
   world = World.new(zygote: zygote)
   cycles_elapsed = 0
+  differences = -1
+  stable = true
   100.times do |i|
     simulate_world_cycle(world)
     print_world(world, log)
@@ -373,7 +375,18 @@ def simulate(zygote, target, log)
   end
   log.write("\n\n")
 
-  [world, cycles_elapsed]
+  if differences == 0
+    20.times do |i|
+      simulate_world_cycle(world)
+      print_world(world, log)
+      if count_differences(target, world.grid) > 0
+        stable = false
+        break
+      end
+    end
+  end
+
+  [world, differences, stable, cycles_elapsed]
 end
 
 def print_target(target)

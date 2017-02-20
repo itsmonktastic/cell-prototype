@@ -10,34 +10,47 @@ def challenges
   Dir.entries("challenges").reject { |e| e[0] == '.' }
 end
 
+def leaderboard_path(challenge)
+  "challenges/#{challenge}/leaderboard.txt"
+end
+
 def parse_leaderboard(challenge)
-  path = "challenges/#{challenge}/leaderboard.txt"
+  path = leaderboard_path(challenge)
   FileUtils.touch(path)
   lines = File.read(path).split("\n")
-  leaderboard = {}
-  lines.each do |line|
-    parts = line.split(" ")
-    leaderboard[parts[0]] = {
-      differences: parts[1].to_i,
-      cycles: parts[2].to_i,
-    }
+  Hash[lines.map { |line| deserialize_leaderboard_row(line) }]
+end
+
+def sort_leaderboard(leaderboard)
+  leaderboard.entries.sort_by do |program, row|
+    serialize_leaderboard_row(row)
   end
-  leaderboard
+end
+
+def serialize_leaderboard_row(row)
+  "#{row[:differences]} #{row[:stable] ? '+' : '-'} #{row[:cycles]}"
+end
+
+def deserialize_leaderboard_row(row)
+  parts = row.split(" ")
+  [parts[0], {
+    differences: parts[1].to_i,
+    stable: parts[2] == '+',
+    cycles: parts[3].to_i,
+  }]
 end
 
 def save_leaderboard(challenge, leaderboard)
-  path = "challenges/#{challenge}/leaderboard.txt"
-  data = leaderboard.entries.sort_by do |key, value|
-    "#{value[:differences]} #{value[:cycles]}"
-  end.map do |key, value|
-    "#{key} #{value[:differences]} #{value[:cycles]}"
+  path = leaderboard_path(challenge)
+  data = sort_leaderboard(leaderboard).map do |program, row|
+    "#{program} #{serialize_leaderboard_row(row)}"
   end.join("\n")
   File.write(path, data)
 end
 
-def update_leaderboard(challenge, program, differences, cycles)
+def update_leaderboard(challenge, program, differences, stable, cycles)
   leaderboard = parse_leaderboard(challenge)
-  leaderboard[program] = {differences: differences, cycles: cycles}
+  leaderboard[program] = {differences: differences, stable: stable, cycles: cycles}
   save_leaderboard(challenge, leaderboard)
 end
 
@@ -55,10 +68,10 @@ def print_leaderboard(challenge, you=nil)
     else
       prefix = "  "
     end
-    [prefix + program_path(challenge, program), value[:differences], value[:cycles]]
+    [prefix + program_path(challenge, program), value[:differences], value[:stable], value[:cycles]]
   end
   table = Terminal::Table.new(
-    headings: ["Solution", "Errors", "Cycles"],
+    headings: ["Solution", "Errors", "Stable?", "Cycles"],
     rows: rows,
   )
   puts "LEADERBOARD"
@@ -99,23 +112,24 @@ class Challenge < Thor
 
     FileUtils.mkdir_p("challenges/#{challenge}/#{program}")
     FileUtils.touch(program_path(challenge, program))
-    program_bytes = File.read(program_path)
+    program_bytes = File.read(program_path(challenge, program))
     if program_bytes.strip.length == 0
-      puts "Write your program in #{program_path}"
+      puts "Write your program in #{program_path(challenge, program)}"
       return
     end
-    zygote = cell_from_file(program_path)
+    zygote = cell_from_file(program_path(challenge, program))
 
     target = target_from_file("challenges/#{challenge}/target.txt")
 
     log_path = "challenges/#{challenge}/#{program}/log.txt"
     world = nil
+    differences = nil
     cycles = nil
+    stable = nil
     File.open(log_path, 'w') do |log|
-      world, cycles = simulate(zygote, target, log)
+      world, differences, stable, cycles = simulate(zygote, target, log)
     end
 
-    differences = count_differences(target, world.grid)
     if differences == 0
       puts "SUCCESS! (in #{cycles} cycles)"
     else
@@ -123,7 +137,11 @@ class Challenge < Thor
       puts "#{differences} differences."
     end
 
-    update_leaderboard(challenge, program, differences, cycles)
+    if !stable
+      puts "WARNING: Result is not stable"
+    end
+
+    update_leaderboard(challenge, program, differences, stable, cycles)
 
     puts "target:"
     print_target(target)

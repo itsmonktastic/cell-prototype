@@ -21,6 +21,18 @@ class Challenge < Thor
     puts target
   end
 
+  desc "create CHALLENGE", "Make a new challenge"
+  def create(challenge)
+    if File.directory?("challenges/#{challenge}")
+      puts "A challenge with that name already exists."
+      return
+    end
+    FileUtils.mkdir("challenges/#{challenge}")
+    target_path = "challenges/#{challenge}/target.txt"
+    FileUtils.cp('challenges/sample.txt', target_path)
+    puts "Fill in #{target_path}"
+  end
+
   desc "attempt CHALLENGE PROGRAM", "Run PROGRAM on CHALLENGE and measure record results"
   def attempt(challenge, program)
     unless challenges.include?(challenge)
@@ -50,7 +62,7 @@ class Challenge < Thor
     if differences == 0
       puts "SUCCESS! (in #{cycles} cycles)"
     else
-      puts "Result does not match (after #{cycles cycles})"
+      puts "Result does not match (after #{cycles} cycles)"
       puts "#{differences} differences."
     end
 

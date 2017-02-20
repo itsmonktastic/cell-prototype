@@ -59,7 +59,7 @@ class Command
 
     PARAMETERS[type].each_with_index do |param_type, i|
       unless parameters[i].kind_of?(param_type)
-        raise "Expected a #{param_type} but got a #{parameters[i].class} at position #{i}"
+        raise "Expected a #{param_type} for command #{type} but got a #{parameters[i].class} at position #{i}"
       end
     end
 
@@ -248,6 +248,8 @@ COMMAND_MAP = {
 ARGUMENT_MAP = {
   'UP' => Command::UP,
   'DOWN' => Command::DOWN,
+  'RIGHT' => Command::RIGHT,
+  'LEFT' => Command::LEFT,
 }
 
 def cell_from_file(program_path)
@@ -258,7 +260,13 @@ def cell_from_file(program_path)
     raise "unknown color #{parts[0]}" if color.nil?
     command_type = COMMAND_MAP[parts[1]]
     raise "unknown command #{parts[1]}" if command_type.nil?
-    arguments = parts.drop(2).map { |a| ARGUMENT_MAP[a] }
+    arguments = parts.drop(2).map do |part|
+      a = ARGUMENT_MAP[part]
+      if a.nil?
+        raise "Unable to parse #{part}"
+      end
+      a
+    end
     Command.new(command_type, arguments, color)
   end
 
@@ -286,7 +294,7 @@ end
 def simulate(zygote, target, log)
   world = World.new(zygote: zygote)
   cycles_elapsed = 0
-  20.times do |i|
+  100.times do |i|
     simulate_world_cycle(world)
     print_world(world, log)
     cycles_elapsed += 1

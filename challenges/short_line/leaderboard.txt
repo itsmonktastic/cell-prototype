@@ -1,1 +1,1 @@
-solution1 0 + 3
+solution1 0 + 12

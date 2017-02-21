@@ -1,0 +1,1049 @@
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+R    SPLIT(UP)
+N -> SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+B -> SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B -> SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 04 .. .. .. 
+.. .. .. .. 00 03 .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 04 .. .. .. 
+.. .. .. .. 00 03 .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P -> SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P -> SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+R    SPLIT(UP)
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B -> SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. .. 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N -> SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N -> SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. .. 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N -> SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P -> SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B -> SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B -> SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N -> SUPPRESS(LEFT, PURPLE)
+03 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P -> SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P -> SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+08 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N -> SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N -> SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+08 (0):
+R    SPLIT(UP)
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N -> SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P -> SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+08 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B -> SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N -> SUPPRESS(LEFT, PURPLE)
+08 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N -> SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+08 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N -> SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P -> SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B -> SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+08 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B -> SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+03 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N -> SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P -> SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+08 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R -> SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N -> SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+08 (0):
+R    SPLIT(UP)
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N -> SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N -> SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N -> SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P -> SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+08 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 04 .. .. .. 
+.. .. .. 05 00 03 .. .. .. 
+.. .. .. 08 02 07 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0):
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+01 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+02 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+03 (0):
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N -> SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+04 (0):
+N    SUPPRESS(UP, RED)
+B -> SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N    SUPPRESS(LEFT, PURPLE)
+05 (0):
+N    SUPPRESS(UP, RED)
+N -> SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+06 (0):
+N    SUPPRESS(UP, RED)
+B    SPLIT(DOWN)
+N    SUPPRESS(DOWN, BLUE)
+G    SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N -> SUPPRESS(LEFT, PURPLE)
+07 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+N    SUPPRESS(RIGHT, GREEN)
+P    SPLIT(LEFT)
+N -> SUPPRESS(LEFT, PURPLE)
+08 (0):
+R    SPLIT(UP)
+N    SUPPRESS(UP, RED)
+N    SUPPRESS(DOWN, BLUE)
+G -> SPLIT(RIGHT)
+N    SUPPRESS(RIGHT, GREEN)
+N    SUPPRESS(LEFT, PURPLE)
+
+

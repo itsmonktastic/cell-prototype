@@ -10,6 +10,12 @@ def challenges
   Dir.entries("challenges").reject { |e| e[0] == '.' }
 end
 
+def programs(challenge)
+  Dir.entries("challenges/#{challenge}")
+    .reject { |e| e[0] == '.' }
+    .select { |e| File.directory?("challenges/#{challenge}/#{e}") }
+end
+
 def leaderboard_path(challenge)
   "challenges/#{challenge}/leaderboard.txt"
 end
@@ -75,8 +81,8 @@ def print_leaderboard(challenge, you=nil)
   puts "LEADERBOARD"
   puts table
 end
-
-class Challenge < Thor
+ 
+class CLI < Thor
   desc "list", "list names of all challenges"
   def list
     puts challenges
@@ -100,6 +106,15 @@ class Challenge < Thor
     target_path = "challenges/#{challenge}/target.txt"
     FileUtils.cp('fixtures/sample.txt', target_path)
     puts "Fill in #{target_path}"
+  end
+
+  desc "attempt_all", "Run all programs and record results"
+  def attempt_all
+    challenges.each do |challenge|
+      programs(challenge).each do |program|
+        attempt(challenge, program)
+      end
+    end
   end
 
   desc "attempt CHALLENGE PROGRAM", "Run PROGRAM on CHALLENGE and measure record results"
@@ -151,10 +166,33 @@ class Challenge < Thor
     puts "Logs in #{log_path}\n#{long_log_path}\n"
     print_leaderboard(challenge, program)
   end
-end
- 
-class CLI < Thor
-  register(Challenge, 'challenge', 'challenge <command>', 'Challenges')
+
+  desc "stats", "show challenges ordered by length of best solution"
+  def stats
+    rows = challenges.map do |challenge|
+      leaderboard = parse_leaderboard(challenge)
+      next if leaderboard.length == 0
+      program, entry = sort_leaderboard(leaderboard).first
+      path = program_path(challenge, program)
+      {
+        challenge: challenge,
+        program: path,
+        cycles: entry[:cycles],
+        commands: cell_from_file(path).commands.length,
+      }
+    end.compact.sort_by do |row|
+      row[:commands]
+    end
+
+    table = Terminal::Table.new(
+      headings: ["Program", "Challenge", "# Commands", "Cycles"],
+      rows: rows.map do |row|
+        [row[:program], row[:challenge], row[:commands], row[:cycles]]
+      end,
+    )
+    puts "Challenges ordered by length of best solution"
+    puts table
+  end
 end
  
 CLI.start(ARGV)

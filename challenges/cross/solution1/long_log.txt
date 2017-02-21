@@ -7,7 +7,15 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -17,7 +25,24 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R -> SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -27,7 +52,16 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R -> SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -37,7 +71,25 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R -> SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -47,7 +99,17 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R -> SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -57,7 +119,26 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R -> SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -67,7 +148,18 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R -> SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -77,7 +169,27 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R -> SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -87,7 +199,19 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -97,7 +221,19 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R -> SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -107,7 +243,19 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R -> SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -117,7 +265,19 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R -> SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -127,7 +287,19 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R -> SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -137,7 +309,19 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R -> SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -147,7 +331,19 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R -> SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -157,7 +353,19 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R -> SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -167,6 +375,18 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-
+00 (0):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(RIGHT)
+R    SUPPRESS(RIGHT, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+R    SPLIT(LEFT)
+R    SUPPRESS(LEFT, RED)
+01 (0):
+02 (0):
+03 (0):
+04 (0):
 
 

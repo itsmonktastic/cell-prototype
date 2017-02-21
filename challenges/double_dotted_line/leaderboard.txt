@@ -1,1 +1,1 @@
-solution1 0 + 20
+solution1 0 + 29

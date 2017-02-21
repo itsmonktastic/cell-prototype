@@ -87,7 +87,7 @@ class Command
 end
 
 class Cell
-  attr_accessor :commands, :id, :program_counter, :is_new, :row, :col, :register
+  attr_accessor :commands, :id, :program_counter, :is_new, :row, :col, :register, :parent
 
   def initialize(row, col)
     self.commands = []
@@ -96,6 +96,7 @@ class Cell
     self.row = row
     self.col = col
     self.register = false
+    self.parent = nil
   end
 
   def pretty_id
@@ -160,7 +161,7 @@ def print_world(world, log, long_log)
 end
 
 def print_cell(cell, log)
-  log.write(sprintf("%s (%s):\n", cell.pretty_id, cell.pretty_register))
+  log.write(sprintf("%s (%s) (%s):\n", cell.pretty_id, cell.pretty_register, cell.parent&.pretty_id))
   cell.commands.each_with_index do |command, i|
     next unless command.active
     if command.color.nil?
@@ -183,7 +184,7 @@ def print_cell(cell, log)
 end
 
 def simulate_cell_cycle(world, cell)
-  return if cell.is_new || cell.commands.none?(&:active)
+  return if cell.is_new || no_active_commands?(cell)
   move_past_inactive_commands(cell)
   command = cell.commands[cell.program_counter]
   advance_program_counter(cell)
@@ -194,6 +195,7 @@ def simulate_cell_cycle(world, cell)
     return unless existing_cell.nil?
     row, col = relative_location(cell.row, cell.col, command.parameters[0])
     new_cell = Cell.new(row, col)
+    new_cell.parent = cell
     new_cell.commands = cell.commands.map(&:dup)
     world.add_cell(new_cell)
   when Command::SUPPRESS

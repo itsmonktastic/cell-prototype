@@ -65,7 +65,7 @@ class Command
     self.active = true
     
     if parameters.length != PARAMETERS[type].length
-      raise "Expected #{PARAMETERS[type].length} parameters, got #{parameters.length}"
+      raise "Expected #{PARAMETERS[type].length} parameters, got #{parameters.length}, for #{type}"
     end
 
     PARAMETERS[type].each_with_index do |param_type, i|
@@ -148,13 +148,14 @@ def print_grid(grid, log)
   end
 end
 
-def print_world(world, log)
+def print_world(world, log, long_log)
   print_grid(world.grid, log)
+  print_grid(world.grid, long_log)
 
   log.write("\n")
 
   world.cells.each do |cell|
-    print_cell(cell, log)
+    print_cell(cell, long_log)
   end
 end
 
@@ -379,32 +380,29 @@ def target_from_file(target_path)
   end
 end
 
-def simulate(zygote, target, log)
+def simulate(zygote, target, log1, log2)
   world = World.new(zygote: zygote)
   cycles_elapsed = 0
   differences = -1
-  stable = true
+  cycles_with_zero_differences = 0
+  stable = false
   100.times do |i|
     simulate_world_cycle(world)
-    print_world(world, log)
+    print_world(world, log1, log2)
     cycles_elapsed += 1
     differences = count_differences(target, world.grid)
     if differences == 0
+      cycles_with_zero_differences += 1
+    else
+      cycles_with_zero_differences = 0
+    end
+    if cycles_with_zero_differences == 10
+      stable = true
       break
     end
   end
-  log.write("\n\n")
-
-  if differences == 0
-    20.times do |i|
-      simulate_world_cycle(world)
-      print_world(world, log)
-      if count_differences(target, world.grid) > 0
-        stable = false
-        break
-      end
-    end
-  end
+  log1.write("\n\n")
+  log2.write("\n\n")
 
   [world, differences, stable, cycles_elapsed]
 end

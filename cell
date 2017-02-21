@@ -120,12 +120,15 @@ class Challenge < Thor
     target = target_from_file("challenges/#{challenge}/target.txt")
 
     log_path = "challenges/#{challenge}/#{program}/log.txt"
+    long_log_path = "challenges/#{challenge}/#{program}/long_log.txt"
     world = nil
     differences = nil
     cycles = nil
     stable = nil
     File.open(log_path, 'w') do |log|
-      world, differences, stable, cycles = simulate(zygote, target, log)
+      File.open(long_log_path, 'w') do |long_log|
+        world, differences, stable, cycles = simulate(zygote, target, log, long_log)
+      end
     end
 
     if differences == 0
@@ -145,7 +148,7 @@ class Challenge < Thor
     print_target(target)
     puts "actual:"
     print_grid(world.grid, $stdout)
-    puts "Logs in #{log_path}\n\n"
+    puts "Logs in #{log_path}\n#{long_log_path}\n"
     print_leaderboard(challenge, program)
   end
 end

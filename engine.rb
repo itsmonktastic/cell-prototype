@@ -337,7 +337,9 @@ ARGUMENT_MAP = {
 
 def cell_from_file(program_path)
   lines = File.read(program_path).split("\n")
-  commands = lines.map do |line|
+  commands = lines.reject do |line|
+    line.strip.length == 0
+  end.map do |line|
     parts = line.split(" ")
     color = COLOR_MAP[parts[0]]
     raise "unknown color #{parts[0]}" if color.nil?

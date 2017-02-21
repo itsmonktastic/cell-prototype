@@ -1,0 +1,1653 @@
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R -> SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R    SPLIT(UP)
+R -> SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+01 (0):
+N -> SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R -> SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+01 (0):
+N    SLEEP
+R -> SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R -> SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+01 (0):
+N    SLEEP
+G    SLEEP
+G -> SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R -> SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+01 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G -> SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+02 (0):
+N -> SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+03 (0):
+N -> SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R -> SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+01 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G -> SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+02 (0):
+N    SLEEP
+R -> SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+03 (0):
+N    SLEEP
+G -> SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R -> SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+01 (1):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G -> JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+02 (0):
+N    SLEEP
+B    SLEEP
+B -> SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+03 (0):
+N    SLEEP
+G    SLEEP
+G -> SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R -> SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+01 (1):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O -> DIE
+02 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B -> SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+03 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G -> SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+04 (0):
+N -> SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+05 (0):
+N -> SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R -> SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+O    LABEL(death)
+O    DIE
+02 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B -> SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+03 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G -> SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+04 (0):
+N    SLEEP
+B -> SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+05 (0):
+N    SLEEP
+G -> SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N    SLEEP
+R    SPLIT(UP)
+R    SUPPRESS(UP, BLUE)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, GREEN)
+R    SUPPRESS(DOWN, RED)
+R    SUPPRESS(SELF, GREEN)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R -> SUPPRESS(SELF, RED)
+02 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B -> SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+03 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G -> JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+04 (0):
+N    SLEEP
+B    SLEEP
+B -> SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+05 (0):
+N    SLEEP
+G    SLEEP
+G -> SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+02 (1):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B -> JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+03 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G -> SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+04 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B -> SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+05 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G -> SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+06 (0):
+N -> SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+07 (0):
+N -> SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+02 (1):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O -> DIE
+03 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G -> SUPPRESS(SELF, GREEN)
+04 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B -> SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+05 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G -> SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+06 (0):
+N    SLEEP
+B -> SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+07 (0):
+N    SLEEP
+G -> SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G -> SUPPRESS(SELF, GREEN)
+04 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B -> JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+05 (1):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G -> JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+06 (0):
+N    SLEEP
+B    SLEEP
+B -> SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+07 (0):
+N    SLEEP
+G    SLEEP
+G -> SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. 05 .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B -> SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+05 (1):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O -> DIE
+06 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B -> SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+07 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G -> SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+08 (0):
+N -> SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B -> SUPPRESS(SELF, BLUE)
+06 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B -> SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+07 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G -> SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+08 (0):
+N    SLEEP
+B -> SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+06 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B -> SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+07 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G -> JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+08 (0):
+N    SLEEP
+B    SLEEP
+B -> SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+06 (1):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B -> JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+07 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G -> SUPPRESS(SELF, ORANGE)
+G    SUPPRESS(SELF, GREEN)
+O    LABEL(death)
+O    DIE
+08 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B -> SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 06 .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+06 (1):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O -> DIE
+07 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G -> SUPPRESS(SELF, GREEN)
+08 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B -> SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N    SLEEP
+G    SLEEP
+G    SPLIT(UP)
+G    SLEEP
+G    SENSE_CELL(DOWN)
+G    JUMP_IF_TRUE(death)
+G    SUPPRESS(SELF, ORANGE)
+G -> SUPPRESS(SELF, GREEN)
+08 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B -> JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+
+
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B -> SUPPRESS(SELF, ORANGE)
+B    SUPPRESS(SELF, BLUE)
+O    LABEL(death)
+O    DIE
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N    SLEEP
+B    SLEEP
+B    SPLIT(DOWN)
+B    SLEEP
+B    SENSE_CELL(UP)
+B    JUMP_IF_TRUE(death)
+B    SUPPRESS(SELF, ORANGE)
+B -> SUPPRESS(SELF, BLUE)
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+
+00 (0):
+N -> SLEEP
+03 (0):
+N -> SLEEP
+04 (0):
+N -> SLEEP
+07 (0):
+N -> SLEEP
+08 (0):
+N -> SLEEP

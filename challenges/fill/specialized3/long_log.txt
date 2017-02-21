@@ -7,7 +7,7 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -26,7 +26,7 @@ N    SPLIT(RIGHT)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 Y -> SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -36,7 +36,7 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 R -> SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -55,7 +55,7 @@ N    SPLIT(RIGHT)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y -> SUPPRESS(UP, YELLOW)
@@ -65,7 +65,7 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 R    SPLIT(UP)
 Y -> SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -74,7 +74,7 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R -> SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -92,7 +92,7 @@ N    SPLIT(RIGHT)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -102,11 +102,11 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 Y -> SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -115,11 +115,11 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 R -> SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -137,7 +137,7 @@ N    SPLIT(RIGHT)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -147,11 +147,11 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y -> SUPPRESS(UP, YELLOW)
@@ -160,11 +160,11 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 R    SPLIT(UP)
 Y -> SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -173,7 +173,7 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 R -> SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -183,15 +183,15 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R -> SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -209,7 +209,7 @@ N    SPLIT(RIGHT)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -218,11 +218,11 @@ Y -> SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -231,15 +231,15 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 Y    SUPPRESS(UP, BLUE)
 Y -> SUPPRESS(UP, YELLOW)
 B    SPLIT(DOWN)
@@ -248,15 +248,15 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 Y -> SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -265,15 +265,15 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -286,7 +286,7 @@ N    SPLIT(RIGHT)
 .. .. .. .. 13 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -295,10 +295,10 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y -> SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -307,27 +307,27 @@ Y -> SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y -> SUPPRESS(UP, YELLOW)
@@ -336,31 +336,31 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -373,14 +373,14 @@ N    SPLIT(RIGHT)
 .. .. .. .. 13 .. .. .. .. 
 .. .. .. .. 21 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -389,27 +389,27 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y -> SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -418,55 +418,55 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -479,37 +479,37 @@ N    SPLIT(RIGHT)
 .. .. .. 25 13 .. .. .. .. 
 .. .. .. .. 21 .. .. .. .. 
 .. .. .. .. 28 .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -518,83 +518,83 @@ Y -> SUPPRESS(DOWN, YELLOW)
 Y    SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -607,37 +607,37 @@ N    SPLIT(RIGHT)
 .. .. .. 25 13 31 .. .. .. 
 .. .. .. 35 21 .. .. .. .. 
 .. .. .. .. 28 .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 Y    SUPPRESS(UP, BLUE)
 Y    SUPPRESS(UP, YELLOW)
@@ -646,111 +646,111 @@ Y    SUPPRESS(DOWN, YELLOW)
 Y -> SUPPRESS(SELF, YELLOW)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -763,177 +763,177 @@ N    SPLIT(RIGHT)
 .. .. 40 25 13 31 .. .. .. 
 .. .. .. 35 21 38 .. .. .. 
 .. .. .. 43 28 .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -946,201 +946,201 @@ N    SPLIT(RIGHT)
 .. .. 40 25 13 31 .. .. .. 
 .. .. 49 35 21 38 .. .. .. 
 .. .. .. 43 28 46 .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -1153,229 +1153,229 @@ N    SPLIT(RIGHT)
 .. 54 40 25 13 31 52 .. .. 
 .. .. 49 35 21 38 .. .. .. 
 .. .. 56 43 28 46 .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-44 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-45 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-46 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-47 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-48 (0):
+45 (0) (24):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-50 (0):
+47 (0) (32):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+48 (0) (34):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+49 (0) (35):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+50 (0) (29):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -1388,249 +1388,249 @@ N    SPLIT(RIGHT)
 .. 54 40 25 13 31 52 .. .. 
 .. 61 49 35 21 38 59 .. .. 
 .. .. 56 43 28 46 .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-50 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-57 (0):
+57 (0) (36):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-58 (0):
+58 (0) (37):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-59 (0):
+59 (0) (38):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -1643,273 +1643,273 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 .. .. 
 .. 61 49 35 21 38 59 .. .. 
 .. 67 56 43 28 46 64 .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-50 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-57 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-58 (0):
+57 (0) (36):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-59 (0):
+58 (0) (37):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+59 (0) (38):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -1922,289 +1922,289 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 .. 
 71 61 49 35 21 38 59 .. .. 
 .. 67 56 43 28 46 64 .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-44 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-45 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-46 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-47 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-48 (0):
+45 (0) (24):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-50 (0):
+47 (0) (32):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+48 (0) (34):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+49 (0) (35):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+50 (0) (29):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-57 (0):
+57 (0) (36):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-58 (0):
+58 (0) (37):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-59 (0):
+59 (0) (38):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -2217,301 +2217,301 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 .. 
 71 61 49 35 21 38 59 73 .. 
 74 67 56 43 28 46 64 .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-50 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-57 (0):
+57 (0) (36):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-58 (0):
+58 (0) (37):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-59 (0):
+59 (0) (38):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-72 (0):
+72 (0) (58):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-73 (0):
+73 (0) (59):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-74 (0):
+74 (0) (67):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -2524,309 +2524,309 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 .. 
 71 61 49 35 21 38 59 73 .. 
 74 67 56 43 28 46 64 76 .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-50 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-57 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-58 (0):
+57 (0) (36):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-59 (0):
+58 (0) (37):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+59 (0) (38):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-72 (0):
+72 (0) (58):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-73 (0):
+73 (0) (59):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-74 (0):
+74 (0) (67):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-75 (0):
+75 (0) (62):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-76 (0):
+76 (0) (64):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -2839,317 +2839,317 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 78 
 71 61 49 35 21 38 59 73 .. 
 74 67 56 43 28 46 64 76 .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-44 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-45 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-46 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-47 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-48 (0):
+45 (0) (24):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-50 (0):
+47 (0) (32):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+48 (0) (34):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+49 (0) (35):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+50 (0) (29):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-57 (0):
+57 (0) (36):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-58 (0):
+58 (0) (37):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-59 (0):
+59 (0) (38):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-72 (0):
+72 (0) (58):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-73 (0):
+73 (0) (59):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-74 (0):
+74 (0) (67):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-75 (0):
+75 (0) (62):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-76 (0):
+76 (0) (64):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-77 (0):
+77 (0) (68):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-78 (0):
+78 (0) (70):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -3162,652 +3162,321 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 78 
 71 61 49 35 21 38 59 73 79 
 74 67 56 43 28 46 64 76 .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-50 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-57 (0):
+57 (0) (36):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-58 (0):
+58 (0) (37):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-59 (0):
+59 (0) (38):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-72 (0):
+72 (0) (58):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-73 (0):
+73 (0) (59):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-74 (0):
+74 (0) (67):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-75 (0):
+75 (0) (62):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-76 (0):
+76 (0) (64):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-77 (0):
+77 (0) (68):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-78 (0):
+78 (0) (70):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-79 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-55 42 27 15 08 20 37 58 72 
-48 34 19 10 04 12 30 51 69 
-41 26 14 07 02 11 24 45 63 
-33 18 09 03 01 06 17 36 57 
-65 53 39 22 00 29 50 68 77 
-60 47 32 16 05 23 44 62 75 
-66 54 40 25 13 31 52 70 78 
-71 61 49 35 21 38 59 73 79 
-74 67 56 43 28 46 64 76 80 
-00 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-01 (0):
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-02 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-03 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-04 (0):
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-05 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-06 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-07 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-08 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-09 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-10 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-11 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-12 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-13 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-14 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-15 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-16 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-17 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-18 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-19 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-20 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-21 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-22 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-23 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-24 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-25 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-26 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-27 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-28 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-29 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-30 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-31 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-32 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-33 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-34 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-35 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-36 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-37 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-38 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-39 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-40 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-41 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-42 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-43 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-44 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-45 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-46 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-47 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-48 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-49 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-50 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-51 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-52 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-53 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-54 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-55 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-56 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-57 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-58 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-59 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-60 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-61 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-62 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-63 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-64 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-65 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-66 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-67 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-68 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-69 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-70 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-71 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-72 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-73 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-74 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-75 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-76 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-77 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-78 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-79 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-80 (0):
+79 (0) (73):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -3820,325 +3489,656 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 78 
 71 61 49 35 21 38 59 73 79 
 74 67 56 43 28 46 64 76 80 
-00 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-01 (0):
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-02 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-03 (0):
-R -> SPLIT(UP)
+01 (0) (00):
 N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-04 (0):
+N -> SPLIT(RIGHT)
+02 (0) (01):
+R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-06 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-07 (0):
-R    SPLIT(UP)
+04 (0) (02):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-08 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-09 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-10 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-11 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-12 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-13 (0):
+05 (0) (00):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+06 (0) (01):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+07 (0) (03):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+08 (0) (04):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+09 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+10 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-17 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-18 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-19 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-20 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-21 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-22 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-23 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-24 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-25 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-26 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-27 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-28 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-29 (0):
+11 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+12 (0) (04):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+13 (0) (05):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+14 (0) (07):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+15 (0) (10):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+16 (0) (05):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+17 (0) (06):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+18 (0) (09):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+19 (0) (10):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+20 (0) (12):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+21 (0) (13):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+22 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+23 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+24 (0) (11):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+25 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+26 (0) (14):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+27 (0) (15):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+28 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-37 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-38 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-39 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-40 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-41 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-42 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-43 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-44 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-45 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-46 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-47 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-48 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-50 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
+39 (0) (22):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
+40 (0) (25):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+41 (0) (26):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+42 (0) (27):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+43 (0) (28):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+44 (0) (23):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+45 (0) (24):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+46 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+47 (0) (32):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+48 (0) (34):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+49 (0) (35):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-57 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-58 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-59 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-60 (0):
+53 (0) (39):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+54 (0) (40):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-61 (0):
+55 (0) (42):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+56 (0) (43):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-62 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-63 (0):
+57 (0) (36):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-64 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-65 (0):
+58 (0) (37):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-66 (0):
+59 (0) (38):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-67 (0):
+60 (0) (47):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-68 (0):
+61 (0) (49):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+62 (0) (44):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+63 (0) (45):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-69 (0):
+64 (0) (46):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+65 (0) (53):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-70 (0):
+66 (0) (54):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-71 (0):
+67 (0) (56):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-72 (0):
+68 (0) (50):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-73 (0):
+69 (0) (51):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+70 (0) (52):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-74 (0):
+71 (0) (61):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-75 (0):
+72 (0) (58):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+73 (0) (59):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-76 (0):
+74 (0) (67):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-77 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-78 (0):
+75 (0) (62):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-79 (0):
+76 (0) (64):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+77 (0) (68):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+78 (0) (70):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-80 (0):
+79 (0) (73):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+80 (0) (76):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+55 42 27 15 08 20 37 58 72 
+48 34 19 10 04 12 30 51 69 
+41 26 14 07 02 11 24 45 63 
+33 18 09 03 01 06 17 36 57 
+65 53 39 22 00 29 50 68 77 
+60 47 32 16 05 23 44 62 75 
+66 54 40 25 13 31 52 70 78 
+71 61 49 35 21 38 59 73 79 
+74 67 56 43 28 46 64 76 80 
+00 (0) ():
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+01 (0) (00):
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+02 (0) (01):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+03 (0) (01):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+04 (0) (02):
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+05 (0) (00):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+06 (0) (01):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+07 (0) (03):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+08 (0) (04):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+09 (0) (03):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+10 (0) (04):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+11 (0) (06):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+12 (0) (04):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+13 (0) (05):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+14 (0) (07):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+15 (0) (10):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+16 (0) (05):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+17 (0) (06):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+18 (0) (09):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+19 (0) (10):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+20 (0) (12):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+21 (0) (13):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+22 (0) (00):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+23 (0) (05):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+24 (0) (11):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+25 (0) (13):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+26 (0) (14):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+27 (0) (15):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+28 (0) (21):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+29 (0) (00):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+30 (0) (12):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+31 (0) (13):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+32 (0) (16):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+33 (0) (18):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+34 (0) (19):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+35 (0) (21):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+36 (0) (17):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+37 (0) (20):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+38 (0) (21):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+39 (0) (22):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+40 (0) (25):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+41 (0) (26):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+42 (0) (27):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+43 (0) (28):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+44 (0) (23):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+45 (0) (24):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+46 (0) (28):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+47 (0) (32):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+48 (0) (34):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+49 (0) (35):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+50 (0) (29):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+51 (0) (30):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+52 (0) (31):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+53 (0) (39):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+54 (0) (40):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+55 (0) (42):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+56 (0) (43):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+57 (0) (36):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+58 (0) (37):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+59 (0) (38):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+60 (0) (47):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+61 (0) (49):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+62 (0) (44):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+63 (0) (45):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+64 (0) (46):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+65 (0) (53):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+66 (0) (54):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+67 (0) (56):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+68 (0) (50):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+69 (0) (51):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+70 (0) (52):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+71 (0) (61):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+72 (0) (58):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+73 (0) (59):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+74 (0) (67):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+75 (0) (62):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+76 (0) (64):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+77 (0) (68):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+78 (0) (70):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+79 (0) (73):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+80 (0) (76):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -4151,325 +4151,325 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 78 
 71 61 49 35 21 38 59 73 79 
 74 67 56 43 28 46 64 76 80 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-50 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-57 (0):
+57 (0) (36):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-58 (0):
+58 (0) (37):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-59 (0):
+59 (0) (38):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-72 (0):
+72 (0) (58):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-73 (0):
+73 (0) (59):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-74 (0):
+74 (0) (67):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-75 (0):
+75 (0) (62):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-76 (0):
+76 (0) (64):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-77 (0):
+77 (0) (68):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-78 (0):
+78 (0) (70):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-79 (0):
+79 (0) (73):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-80 (0):
+80 (0) (76):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
@@ -4482,1318 +4482,325 @@ N -> SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 78 
 71 61 49 35 21 38 59 73 79 
 74 67 56 43 28 46 64 76 80 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-01 (0):
+01 (0) (00):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-02 (0):
+02 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-04 (0):
+04 (0) (02):
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-05 (0):
+05 (0) (00):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-50 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-57 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-58 (0):
+57 (0) (36):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-59 (0):
+58 (0) (37):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+59 (0) (38):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-72 (0):
+72 (0) (58):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-73 (0):
+73 (0) (59):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-74 (0):
+74 (0) (67):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-75 (0):
+75 (0) (62):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-76 (0):
+76 (0) (64):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-77 (0):
+77 (0) (68):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-78 (0):
+78 (0) (70):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-79 (0):
+79 (0) (73):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-80 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-55 42 27 15 08 20 37 58 72 
-48 34 19 10 04 12 30 51 69 
-41 26 14 07 02 11 24 45 63 
-33 18 09 03 01 06 17 36 57 
-65 53 39 22 00 29 50 68 77 
-60 47 32 16 05 23 44 62 75 
-66 54 40 25 13 31 52 70 78 
-71 61 49 35 21 38 59 73 79 
-74 67 56 43 28 46 64 76 80 
-00 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-01 (0):
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-02 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-03 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-04 (0):
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-05 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-06 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-07 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-08 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-09 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-10 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-11 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-12 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-13 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-14 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-15 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-16 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-17 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-18 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-19 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-20 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-21 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-22 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-23 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-24 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-25 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-26 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-27 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-28 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-29 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-30 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-31 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-32 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-33 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-34 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-35 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-36 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-37 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-38 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-39 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-40 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-41 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-42 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-43 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-44 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-45 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-46 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-47 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-48 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-49 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-50 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-51 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-52 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-53 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-54 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-55 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-56 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-57 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-58 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-59 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-60 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-61 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-62 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-63 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-64 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-65 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-66 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-67 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-68 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-69 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-70 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-71 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-72 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-73 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-74 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-75 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-76 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-77 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-78 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-79 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-80 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-55 42 27 15 08 20 37 58 72 
-48 34 19 10 04 12 30 51 69 
-41 26 14 07 02 11 24 45 63 
-33 18 09 03 01 06 17 36 57 
-65 53 39 22 00 29 50 68 77 
-60 47 32 16 05 23 44 62 75 
-66 54 40 25 13 31 52 70 78 
-71 61 49 35 21 38 59 73 79 
-74 67 56 43 28 46 64 76 80 
-00 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-01 (0):
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-02 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-03 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-04 (0):
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-05 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-06 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-07 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-08 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-09 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-10 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-11 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-12 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-13 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-14 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-15 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-16 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-17 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-18 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-19 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-20 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-21 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-22 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-23 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-24 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-25 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-26 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-27 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-28 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-29 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-30 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-31 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-32 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-33 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-34 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-35 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-36 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-37 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-38 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-39 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-40 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-41 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-42 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-43 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-44 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-45 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-46 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-47 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-48 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-49 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-50 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-51 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-52 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-53 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-54 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-55 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-56 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-57 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-58 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-59 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-60 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-61 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-62 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-63 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-64 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-65 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-66 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-67 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-68 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-69 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-70 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-71 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-72 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-73 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-74 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-75 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-76 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-77 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-78 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-79 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-80 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-55 42 27 15 08 20 37 58 72 
-48 34 19 10 04 12 30 51 69 
-41 26 14 07 02 11 24 45 63 
-33 18 09 03 01 06 17 36 57 
-65 53 39 22 00 29 50 68 77 
-60 47 32 16 05 23 44 62 75 
-66 54 40 25 13 31 52 70 78 
-71 61 49 35 21 38 59 73 79 
-74 67 56 43 28 46 64 76 80 
-00 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-01 (0):
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-02 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-03 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-04 (0):
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-05 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-06 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-07 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-08 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-09 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-10 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-11 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-12 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-13 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-14 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-15 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-16 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-17 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-18 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-19 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-20 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-21 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-22 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-23 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-24 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-25 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-26 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-27 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-28 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-29 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-30 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-31 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-32 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-33 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-34 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-35 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-36 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-37 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-38 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-39 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-40 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-41 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-42 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-43 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-44 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-45 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-46 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-47 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-48 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-49 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-50 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-51 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-52 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-53 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-54 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-55 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-56 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-57 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-58 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-59 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-60 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-61 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-62 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-63 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-64 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-65 (0):
-R -> SPLIT(UP)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-66 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-67 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-68 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-69 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-70 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-71 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-72 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-73 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-74 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-75 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-76 (0):
-B -> SPLIT(DOWN)
-N    SPLIT(LEFT)
-N    SPLIT(RIGHT)
-77 (0):
-R    SPLIT(UP)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-78 (0):
-B    SPLIT(DOWN)
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-79 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-80 (0):
+80 (0) (76):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -5806,325 +4813,325 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 78 
 71 61 49 35 21 38 59 73 79 
 74 67 56 43 28 46 64 76 80 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-02 (0):
+01 (0) (00):
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+02 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-05 (0):
+04 (0) (02):
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+05 (0) (00):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-44 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-45 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-46 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-47 (0):
-B    SPLIT(DOWN)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-48 (0):
+45 (0) (24):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-50 (0):
+47 (0) (32):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+48 (0) (34):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+49 (0) (35):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+50 (0) (29):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-57 (0):
+57 (0) (36):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-58 (0):
+58 (0) (37):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-59 (0):
+59 (0) (38):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-72 (0):
+72 (0) (58):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-73 (0):
+73 (0) (59):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-74 (0):
+74 (0) (67):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-75 (0):
+75 (0) (62):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-76 (0):
+76 (0) (64):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-77 (0):
+77 (0) (68):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-78 (0):
+78 (0) (70):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-79 (0):
+79 (0) (73):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-80 (0):
+80 (0) (76):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
@@ -6137,325 +5144,325 @@ N    SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 78 
 71 61 49 35 21 38 59 73 79 
 74 67 56 43 28 46 64 76 80 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-01 (0):
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-02 (0):
+01 (0) (00):
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+02 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-04 (0):
-N    SPLIT(LEFT)
-N -> SPLIT(RIGHT)
-05 (0):
+04 (0) (02):
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+05 (0) (00):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-50 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-57 (0):
+57 (0) (36):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-58 (0):
+58 (0) (37):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-59 (0):
+59 (0) (38):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-72 (0):
+72 (0) (58):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-73 (0):
+73 (0) (59):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-74 (0):
+74 (0) (67):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-75 (0):
+75 (0) (62):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-76 (0):
+76 (0) (64):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-77 (0):
+77 (0) (68):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-78 (0):
+78 (0) (70):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-79 (0):
+79 (0) (73):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-80 (0):
+80 (0) (76):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
@@ -6468,325 +5475,1318 @@ N -> SPLIT(RIGHT)
 66 54 40 25 13 31 52 70 78 
 71 61 49 35 21 38 59 73 79 
 74 67 56 43 28 46 64 76 80 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-01 (0):
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-02 (0):
+01 (0) (00):
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+02 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-03 (0):
+03 (0) (01):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-04 (0):
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-05 (0):
+04 (0) (02):
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+05 (0) (00):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-06 (0):
+06 (0) (01):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-07 (0):
+07 (0) (03):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-08 (0):
+08 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-09 (0):
+09 (0) (03):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-10 (0):
+10 (0) (04):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-11 (0):
+11 (0) (06):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-12 (0):
+12 (0) (04):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-13 (0):
+13 (0) (05):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-14 (0):
+14 (0) (07):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-15 (0):
+15 (0) (10):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-16 (0):
+16 (0) (05):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-17 (0):
+17 (0) (06):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-18 (0):
+18 (0) (09):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-19 (0):
+19 (0) (10):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-20 (0):
+20 (0) (12):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-21 (0):
+21 (0) (13):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-22 (0):
+22 (0) (00):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-23 (0):
+23 (0) (05):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-24 (0):
+24 (0) (11):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-25 (0):
+25 (0) (13):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-26 (0):
+26 (0) (14):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-27 (0):
+27 (0) (15):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-28 (0):
+28 (0) (21):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-29 (0):
+29 (0) (00):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-30 (0):
+30 (0) (12):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-31 (0):
+31 (0) (13):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-32 (0):
+32 (0) (16):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-33 (0):
+33 (0) (18):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-34 (0):
+34 (0) (19):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-35 (0):
+35 (0) (21):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-36 (0):
+36 (0) (17):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-37 (0):
+37 (0) (20):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-38 (0):
+38 (0) (21):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-39 (0):
+39 (0) (22):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-40 (0):
+40 (0) (25):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-41 (0):
+41 (0) (26):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-42 (0):
+42 (0) (27):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-43 (0):
+43 (0) (28):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-44 (0):
+44 (0) (23):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-45 (0):
+45 (0) (24):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-46 (0):
+46 (0) (28):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-47 (0):
+47 (0) (32):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-48 (0):
+48 (0) (34):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-49 (0):
+49 (0) (35):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-50 (0):
+50 (0) (29):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-51 (0):
+51 (0) (30):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-52 (0):
+52 (0) (31):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-53 (0):
+53 (0) (39):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-54 (0):
+54 (0) (40):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-55 (0):
+55 (0) (42):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-56 (0):
+56 (0) (43):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-57 (0):
-R    SPLIT(UP)
-N -> SPLIT(LEFT)
-N    SPLIT(RIGHT)
-58 (0):
+57 (0) (36):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-59 (0):
+58 (0) (37):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+59 (0) (38):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-60 (0):
+60 (0) (47):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-61 (0):
+61 (0) (49):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-62 (0):
+62 (0) (44):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-63 (0):
+63 (0) (45):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-64 (0):
+64 (0) (46):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-65 (0):
+65 (0) (53):
 R -> SPLIT(UP)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-66 (0):
+66 (0) (54):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-67 (0):
+67 (0) (56):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-68 (0):
+68 (0) (50):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-69 (0):
+69 (0) (51):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-70 (0):
+70 (0) (52):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-71 (0):
+71 (0) (61):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-72 (0):
+72 (0) (58):
 R    SPLIT(UP)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-73 (0):
+73 (0) (59):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-74 (0):
+74 (0) (67):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-75 (0):
+75 (0) (62):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-76 (0):
+76 (0) (64):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)
-77 (0):
+77 (0) (68):
 R    SPLIT(UP)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-78 (0):
+78 (0) (70):
 B    SPLIT(DOWN)
 N    SPLIT(LEFT)
 N -> SPLIT(RIGHT)
-79 (0):
+79 (0) (73):
 B    SPLIT(DOWN)
 N -> SPLIT(LEFT)
 N    SPLIT(RIGHT)
-80 (0):
+80 (0) (76):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+55 42 27 15 08 20 37 58 72 
+48 34 19 10 04 12 30 51 69 
+41 26 14 07 02 11 24 45 63 
+33 18 09 03 01 06 17 36 57 
+65 53 39 22 00 29 50 68 77 
+60 47 32 16 05 23 44 62 75 
+66 54 40 25 13 31 52 70 78 
+71 61 49 35 21 38 59 73 79 
+74 67 56 43 28 46 64 76 80 
+00 (0) ():
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+01 (0) (00):
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+02 (0) (01):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+03 (0) (01):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+04 (0) (02):
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+05 (0) (00):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+06 (0) (01):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+07 (0) (03):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+08 (0) (04):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+09 (0) (03):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+10 (0) (04):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+11 (0) (06):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+12 (0) (04):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+13 (0) (05):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+14 (0) (07):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+15 (0) (10):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+16 (0) (05):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+17 (0) (06):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+18 (0) (09):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+19 (0) (10):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+20 (0) (12):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+21 (0) (13):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+22 (0) (00):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+23 (0) (05):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+24 (0) (11):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+25 (0) (13):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+26 (0) (14):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+27 (0) (15):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+28 (0) (21):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+29 (0) (00):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+30 (0) (12):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+31 (0) (13):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+32 (0) (16):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+33 (0) (18):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+34 (0) (19):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+35 (0) (21):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+36 (0) (17):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+37 (0) (20):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+38 (0) (21):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+39 (0) (22):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+40 (0) (25):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+41 (0) (26):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+42 (0) (27):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+43 (0) (28):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+44 (0) (23):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+45 (0) (24):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+46 (0) (28):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+47 (0) (32):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+48 (0) (34):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+49 (0) (35):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+50 (0) (29):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+51 (0) (30):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+52 (0) (31):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+53 (0) (39):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+54 (0) (40):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+55 (0) (42):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+56 (0) (43):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+57 (0) (36):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+58 (0) (37):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+59 (0) (38):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+60 (0) (47):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+61 (0) (49):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+62 (0) (44):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+63 (0) (45):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+64 (0) (46):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+65 (0) (53):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+66 (0) (54):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+67 (0) (56):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+68 (0) (50):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+69 (0) (51):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+70 (0) (52):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+71 (0) (61):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+72 (0) (58):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+73 (0) (59):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+74 (0) (67):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+75 (0) (62):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+76 (0) (64):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+77 (0) (68):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+78 (0) (70):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+79 (0) (73):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+80 (0) (76):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+55 42 27 15 08 20 37 58 72 
+48 34 19 10 04 12 30 51 69 
+41 26 14 07 02 11 24 45 63 
+33 18 09 03 01 06 17 36 57 
+65 53 39 22 00 29 50 68 77 
+60 47 32 16 05 23 44 62 75 
+66 54 40 25 13 31 52 70 78 
+71 61 49 35 21 38 59 73 79 
+74 67 56 43 28 46 64 76 80 
+00 (0) ():
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+01 (0) (00):
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+02 (0) (01):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+03 (0) (01):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+04 (0) (02):
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+05 (0) (00):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+06 (0) (01):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+07 (0) (03):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+08 (0) (04):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+09 (0) (03):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+10 (0) (04):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+11 (0) (06):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+12 (0) (04):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+13 (0) (05):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+14 (0) (07):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+15 (0) (10):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+16 (0) (05):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+17 (0) (06):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+18 (0) (09):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+19 (0) (10):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+20 (0) (12):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+21 (0) (13):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+22 (0) (00):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+23 (0) (05):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+24 (0) (11):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+25 (0) (13):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+26 (0) (14):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+27 (0) (15):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+28 (0) (21):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+29 (0) (00):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+30 (0) (12):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+31 (0) (13):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+32 (0) (16):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+33 (0) (18):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+34 (0) (19):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+35 (0) (21):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+36 (0) (17):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+37 (0) (20):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+38 (0) (21):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+39 (0) (22):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+40 (0) (25):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+41 (0) (26):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+42 (0) (27):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+43 (0) (28):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+44 (0) (23):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+45 (0) (24):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+46 (0) (28):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+47 (0) (32):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+48 (0) (34):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+49 (0) (35):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+50 (0) (29):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+51 (0) (30):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+52 (0) (31):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+53 (0) (39):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+54 (0) (40):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+55 (0) (42):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+56 (0) (43):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+57 (0) (36):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+58 (0) (37):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+59 (0) (38):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+60 (0) (47):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+61 (0) (49):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+62 (0) (44):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+63 (0) (45):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+64 (0) (46):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+65 (0) (53):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+66 (0) (54):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+67 (0) (56):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+68 (0) (50):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+69 (0) (51):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+70 (0) (52):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+71 (0) (61):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+72 (0) (58):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+73 (0) (59):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+74 (0) (67):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+75 (0) (62):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+76 (0) (64):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+77 (0) (68):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+78 (0) (70):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+79 (0) (73):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+80 (0) (76):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+55 42 27 15 08 20 37 58 72 
+48 34 19 10 04 12 30 51 69 
+41 26 14 07 02 11 24 45 63 
+33 18 09 03 01 06 17 36 57 
+65 53 39 22 00 29 50 68 77 
+60 47 32 16 05 23 44 62 75 
+66 54 40 25 13 31 52 70 78 
+71 61 49 35 21 38 59 73 79 
+74 67 56 43 28 46 64 76 80 
+00 (0) ():
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+01 (0) (00):
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+02 (0) (01):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+03 (0) (01):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+04 (0) (02):
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+05 (0) (00):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+06 (0) (01):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+07 (0) (03):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+08 (0) (04):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+09 (0) (03):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+10 (0) (04):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+11 (0) (06):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+12 (0) (04):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+13 (0) (05):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+14 (0) (07):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+15 (0) (10):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+16 (0) (05):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+17 (0) (06):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+18 (0) (09):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+19 (0) (10):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+20 (0) (12):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+21 (0) (13):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+22 (0) (00):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+23 (0) (05):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+24 (0) (11):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+25 (0) (13):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+26 (0) (14):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+27 (0) (15):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+28 (0) (21):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+29 (0) (00):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+30 (0) (12):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+31 (0) (13):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+32 (0) (16):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+33 (0) (18):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+34 (0) (19):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+35 (0) (21):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+36 (0) (17):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+37 (0) (20):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+38 (0) (21):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+39 (0) (22):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+40 (0) (25):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+41 (0) (26):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+42 (0) (27):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+43 (0) (28):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+44 (0) (23):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+45 (0) (24):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+46 (0) (28):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+47 (0) (32):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+48 (0) (34):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+49 (0) (35):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+50 (0) (29):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+51 (0) (30):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+52 (0) (31):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+53 (0) (39):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+54 (0) (40):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+55 (0) (42):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+56 (0) (43):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+57 (0) (36):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+58 (0) (37):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+59 (0) (38):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+60 (0) (47):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+61 (0) (49):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+62 (0) (44):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+63 (0) (45):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+64 (0) (46):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+65 (0) (53):
+R -> SPLIT(UP)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+66 (0) (54):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+67 (0) (56):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+68 (0) (50):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+69 (0) (51):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+70 (0) (52):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+71 (0) (61):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+72 (0) (58):
+R    SPLIT(UP)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+73 (0) (59):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+74 (0) (67):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+75 (0) (62):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+76 (0) (64):
+B -> SPLIT(DOWN)
+N    SPLIT(LEFT)
+N    SPLIT(RIGHT)
+77 (0) (68):
+R    SPLIT(UP)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+78 (0) (70):
+B    SPLIT(DOWN)
+N    SPLIT(LEFT)
+N -> SPLIT(RIGHT)
+79 (0) (73):
+B    SPLIT(DOWN)
+N -> SPLIT(LEFT)
+N    SPLIT(RIGHT)
+80 (0) (76):
 B -> SPLIT(DOWN)
 N    SPLIT(LEFT)
 N    SPLIT(RIGHT)

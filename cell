@@ -34,7 +34,7 @@ def sort_leaderboard(leaderboard)
 end
 
 def serialize_leaderboard_row(row)
-  "#{row[:differences]} #{row[:stable] ? '+' : '-'} #{row[:cycles]}"
+  "#{row[:differences]} #{row[:stable] ? '+' : '-'} #{row[:cycles]} #{row[:commands]}"
 end
 
 def deserialize_leaderboard_row(row)
@@ -43,6 +43,7 @@ def deserialize_leaderboard_row(row)
     differences: parts[1].to_i,
     stable: parts[2] == '+',
     cycles: parts[3].to_i,
+    commands: parts[4].to_i
   }]
 end
 
@@ -56,7 +57,12 @@ end
 
 def update_leaderboard(challenge, program, differences, stable, cycles)
   leaderboard = parse_leaderboard(challenge)
-  leaderboard[program] = {differences: differences, stable: stable, cycles: cycles}
+  leaderboard[program] = {
+    differences: differences,
+    stable: stable,
+    cycles: cycles,
+    commands: cell_from_file(program_path(challenge, program)).commands.length,
+  }
   save_leaderboard(challenge, leaderboard)
 end
 
@@ -72,10 +78,10 @@ def print_leaderboard(challenge, you=nil)
     else
       prefix = "  "
     end
-    [prefix + program_path(challenge, program), value[:differences], value[:stable], value[:cycles]]
+    [prefix + program_path(challenge, program), value[:differences], value[:stable], value[:cycles], value[:commands]]
   end
   table = Terminal::Table.new(
-    headings: ["Solution", "Errors", "Stable?", "Cycles"],
+    headings: ["Solution", "Errors", "Stable?", "Cycles", "# Commands"],
     rows: rows,
   )
   puts "LEADERBOARD"

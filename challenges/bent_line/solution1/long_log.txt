@@ -7,7 +7,7 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -30,7 +30,7 @@ G    SUPPRESS(RIGHT, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R -> SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -44,7 +44,7 @@ B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-01 (0):
+01 (0) (00):
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -67,7 +67,7 @@ G    SUPPRESS(RIGHT, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R -> SUPPRESS(UP, GREEN)
@@ -81,7 +81,7 @@ B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-01 (0):
+01 (0) (00):
 N    SLEEP
 B -> SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
@@ -96,7 +96,7 @@ G    SUPPRESS(RIGHT, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -110,11 +110,11 @@ B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-01 (0):
+01 (0) (00):
 N    SLEEP
 B    SPLIT(UP)
 B -> SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N    SLEEP
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
@@ -127,7 +127,7 @@ B    SUPPRESS(UP, BLUE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -141,13 +141,13 @@ B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-01 (0):
+01 (0) (00):
 N -> SLEEP
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -170,7 +170,7 @@ G    SUPPRESS(RIGHT, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -184,13 +184,13 @@ B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-01 (0):
+01 (0) (00):
 N    SLEEP
 B -> SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N    SLEEP
 B -> SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
@@ -205,7 +205,7 @@ G    SUPPRESS(RIGHT, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -219,17 +219,17 @@ B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-01 (0):
+01 (0) (00):
 N    SLEEP
 B    SPLIT(UP)
 B -> SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N    SLEEP
 G    SPLIT(RIGHT)
 G -> SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N    SLEEP
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
@@ -242,7 +242,7 @@ G    SUPPRESS(RIGHT, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -254,17 +254,17 @@ R -> SUPPRESS(SELF, GREEN)
 N    SLEEP
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-01 (0):
+01 (0) (00):
 N -> SLEEP
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N -> SLEEP
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -275,7 +275,7 @@ N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -285,17 +285,17 @@ R    SUPPRESS(RIGHT, BLUE)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
 N -> SLEEP
-01 (0):
+01 (0) (00):
 N    SLEEP
 B -> SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N    SLEEP
 G -> SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -306,7 +306,7 @@ N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -316,17 +316,17 @@ R    SUPPRESS(RIGHT, BLUE)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
 N    SLEEP
-01 (0):
+01 (0) (00):
 N    SLEEP
 B    SPLIT(UP)
 B -> SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N    SLEEP
 G    SPLIT(RIGHT)
 G -> SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -337,7 +337,7 @@ N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R -> SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -347,17 +347,17 @@ R    SUPPRESS(RIGHT, BLUE)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
 N    SLEEP
-01 (0):
+01 (0) (00):
 N -> SLEEP
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N -> SLEEP
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -368,7 +368,7 @@ N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R -> SUPPRESS(UP, GREEN)
@@ -378,17 +378,17 @@ R    SUPPRESS(RIGHT, BLUE)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
 N    SLEEP
-01 (0):
+01 (0) (00):
 N    SLEEP
 B -> SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N    SLEEP
 G -> SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -399,7 +399,7 @@ N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -409,17 +409,17 @@ R    SUPPRESS(RIGHT, BLUE)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
 N    SLEEP
-01 (0):
+01 (0) (00):
 N    SLEEP
 B    SPLIT(UP)
 B -> SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N    SLEEP
 G    SPLIT(RIGHT)
 G -> SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -430,7 +430,7 @@ N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -440,17 +440,17 @@ R    SUPPRESS(RIGHT, BLUE)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
 N    SLEEP
-01 (0):
+01 (0) (00):
 N -> SLEEP
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N -> SLEEP
 G    SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -461,7 +461,7 @@ N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -471,17 +471,17 @@ R -> SUPPRESS(RIGHT, BLUE)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
 N    SLEEP
-01 (0):
+01 (0) (00):
 N    SLEEP
 B -> SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N    SLEEP
 G -> SPLIT(RIGHT)
 G    SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -492,7 +492,7 @@ N -> SLEEP
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(UP, GREEN)
@@ -502,17 +502,17 @@ R    SUPPRESS(RIGHT, BLUE)
 R -> SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
 N    SLEEP
-01 (0):
+01 (0) (00):
 N    SLEEP
 B    SPLIT(UP)
 B -> SUPPRESS(UP, BLUE)
-02 (0):
+02 (0) (01):
 N -> SLEEP
-03 (0):
+03 (0) (00):
 N    SLEEP
 G    SPLIT(RIGHT)
 G -> SUPPRESS(RIGHT, GREEN)
-04 (0):
+04 (0) (03):
 N -> SLEEP
 
 

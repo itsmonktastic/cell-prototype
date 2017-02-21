@@ -7,7 +7,7 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y -> JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -28,7 +28,7 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -49,7 +49,7 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -61,7 +61,7 @@ Y -> SUPPRESS(UP, YELLOW)
 Y    SLEEP
 Y    SUPPRESS(SELF, ORANGE)
 Y    SUPPRESS(SELF, YELLOW)
-01 (0):
+01 (0) (00):
 Y -> JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -82,7 +82,7 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -94,12 +94,12 @@ Y    SUPPRESS(UP, YELLOW)
 Y -> SLEEP
 Y    SUPPRESS(SELF, ORANGE)
 Y    SUPPRESS(SELF, YELLOW)
-01 (0):
+01 (0) (00):
 O    LABEL(death)
 O    SPLIT(UP)
 O -> ACTIVATE(UP, YELLOW)
 O    DIE
-02 (0):
+02 (0) (01):
 O    LABEL(death)
 O    SPLIT(UP)
 O    ACTIVATE(UP, YELLOW)
@@ -113,7 +113,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -125,12 +125,12 @@ Y    SUPPRESS(UP, YELLOW)
 Y    SLEEP
 Y -> SUPPRESS(SELF, ORANGE)
 Y    SUPPRESS(SELF, YELLOW)
-01 (0):
+01 (0) (00):
 O    LABEL(death)
 O    SPLIT(UP)
 O    ACTIVATE(UP, YELLOW)
 O -> DIE
-02 (0):
+02 (0) (01):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -151,7 +151,7 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y    JUMP(life)
 Y    LABEL(life)
 Y    SPLIT(UP)
@@ -159,7 +159,7 @@ Y    SUPPRESS(UP, YELLOW)
 Y    SLEEP
 Y    SUPPRESS(SELF, ORANGE)
 Y -> SUPPRESS(SELF, YELLOW)
-02 (0):
+02 (0) (01):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -180,8 +180,8 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
+00 (0) ():
+02 (0) (01):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -193,7 +193,7 @@ Y -> SUPPRESS(UP, YELLOW)
 Y    SLEEP
 Y    SUPPRESS(SELF, ORANGE)
 Y    SUPPRESS(SELF, YELLOW)
-03 (0):
+03 (0) (02):
 Y -> JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -214,8 +214,8 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
+00 (0) ():
+02 (0) (01):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -227,12 +227,12 @@ Y    SUPPRESS(UP, YELLOW)
 Y -> SLEEP
 Y    SUPPRESS(SELF, ORANGE)
 Y    SUPPRESS(SELF, YELLOW)
-03 (0):
+03 (0) (02):
 O    LABEL(death)
 O    SPLIT(UP)
 O -> ACTIVATE(UP, YELLOW)
 O    DIE
-04 (0):
+04 (0) (03):
 O    LABEL(death)
 O    SPLIT(UP)
 O    ACTIVATE(UP, YELLOW)
@@ -246,8 +246,8 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
+00 (0) ():
+02 (0) (01):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -259,12 +259,12 @@ Y    SUPPRESS(UP, YELLOW)
 Y    SLEEP
 Y -> SUPPRESS(SELF, ORANGE)
 Y    SUPPRESS(SELF, YELLOW)
-03 (0):
+03 (0) (02):
 O    LABEL(death)
 O    SPLIT(UP)
 O    ACTIVATE(UP, YELLOW)
 O -> DIE
-04 (0):
+04 (0) (03):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -285,8 +285,8 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
+00 (0) ():
+02 (0) (01):
 Y    JUMP(life)
 Y    LABEL(life)
 Y    SPLIT(UP)
@@ -294,7 +294,7 @@ Y    SUPPRESS(UP, YELLOW)
 Y    SLEEP
 Y    SUPPRESS(SELF, ORANGE)
 Y -> SUPPRESS(SELF, YELLOW)
-04 (0):
+04 (0) (03):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -315,9 +315,9 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
-04 (0):
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -338,9 +338,9 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
-04 (0):
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -361,9 +361,9 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
-04 (0):
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
 Y    JUMP(life)
 O    LABEL(death)
 O    SPLIT(UP)
@@ -384,9 +384,9 @@ Y    SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
-04 (0):
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
 Y    JUMP(life)
 Y    LABEL(life)
 Y    SPLIT(UP)
@@ -403,9 +403,9 @@ Y -> SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
-04 (0):
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -415,9 +415,9 @@ Y -> SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
-04 (0):
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -427,9 +427,9 @@ Y -> SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
-04 (0):
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -439,9 +439,9 @@ Y -> SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
-04 (0):
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -451,8 +451,8 @@ Y -> SUPPRESS(SELF, YELLOW)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
-02 (0):
-04 (0):
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
 
 

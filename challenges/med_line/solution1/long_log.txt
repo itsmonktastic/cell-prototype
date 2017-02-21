@@ -7,7 +7,7 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
@@ -26,7 +26,7 @@ G    SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R -> SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
@@ -36,7 +36,7 @@ B    SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
 G    SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-01 (0):
+01 (0) (00):
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
@@ -55,7 +55,7 @@ G    SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R -> SUPPRESS(SELF, BLUE)
@@ -65,13 +65,13 @@ B    SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
 G    SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-01 (0):
+01 (0) (00):
 B    SPLIT(UP)
 B -> SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
 G    SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-02 (0):
+02 (0) (01):
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
@@ -86,23 +86,23 @@ G    SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
 R -> SUPPRESS(SELF, GREEN)
 G    SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-01 (0):
+01 (0) (00):
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 B -> SUPPRESS(SELF, GREEN)
 G    SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-02 (0):
+02 (0) (01):
 G    SPLIT(UP)
 G -> SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 G    SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
@@ -114,19 +114,19 @@ G    SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
-01 (0):
+01 (0) (00):
 B -> SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
-02 (0):
+02 (0) (01):
 G -> SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 03 .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -136,19 +136,19 @@ G    SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R -> SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
-01 (0):
+01 (0) (00):
 B    SPLIT(UP)
 B -> SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
-02 (0):
+02 (0) (01):
 G    SPLIT(UP)
 G -> SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 03 .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -158,19 +158,19 @@ G -> SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R -> SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
-01 (0):
+01 (0) (00):
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 B -> SUPPRESS(SELF, GREEN)
-02 (0):
+02 (0) (01):
 G -> SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 03 .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -180,19 +180,19 @@ G    SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
 R -> SUPPRESS(SELF, GREEN)
-01 (0):
+01 (0) (00):
 B -> SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
-02 (0):
+02 (0) (01):
 G    SPLIT(UP)
 G -> SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 03 .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -202,19 +202,19 @@ G -> SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
-01 (0):
+01 (0) (00):
 B    SPLIT(UP)
 B -> SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
-02 (0):
+02 (0) (01):
 G -> SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 03 .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -224,19 +224,19 @@ G    SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R -> SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
-01 (0):
+01 (0) (00):
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 B -> SUPPRESS(SELF, GREEN)
-02 (0):
+02 (0) (01):
 G    SPLIT(UP)
 G -> SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 03 .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -246,19 +246,19 @@ G -> SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R -> SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
-01 (0):
+01 (0) (00):
 B -> SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
-02 (0):
+02 (0) (01):
 G -> SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 03 .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -268,19 +268,19 @@ G    SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
 R -> SUPPRESS(SELF, GREEN)
-01 (0):
+01 (0) (00):
 B    SPLIT(UP)
 B -> SUPPRESS(UP, BLUE)
 B    SUPPRESS(SELF, GREEN)
-02 (0):
+02 (0) (01):
 G    SPLIT(UP)
 G -> SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 03 .. .. .. .. 
 .. .. .. .. 02 .. .. .. .. 
@@ -290,18 +290,18 @@ G -> SUPPRESS(UP, GREEN)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, GREEN)
-01 (0):
+01 (0) (00):
 B    SPLIT(UP)
 B    SUPPRESS(UP, BLUE)
 B -> SUPPRESS(SELF, GREEN)
-02 (0):
+02 (0) (01):
 G -> SPLIT(UP)
 G    SUPPRESS(UP, GREEN)
-03 (0):
+03 (0) (02):
 
 

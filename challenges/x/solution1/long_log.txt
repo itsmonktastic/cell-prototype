@@ -7,7 +7,7 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -35,7 +35,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R -> SUPPRESS(UP, RED)
 R    SLEEP
@@ -54,7 +54,7 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-01 (0):
+01 (0) (00):
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -82,7 +82,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R -> SLEEP
@@ -101,14 +101,14 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-01 (0):
+01 (0) (00):
 B    SPLIT(RIGHT)
 B -> SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
@@ -124,7 +124,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -143,14 +143,14 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-01 (0):
+01 (0) (00):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B -> SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -161,7 +161,7 @@ Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -180,16 +180,16 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-01 (0):
+01 (0) (00):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
 B -> SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
@@ -205,7 +205,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -224,15 +224,15 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-01 (0):
+01 (0) (00):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 O -> DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -243,7 +243,7 @@ Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -262,11 +262,11 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-04 (0):
+04 (0) (00):
 R -> SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -294,7 +294,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -313,18 +313,18 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-04 (0):
+04 (0) (00):
 B    SPLIT(RIGHT)
 B -> SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-05 (0):
+05 (0) (04):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
@@ -340,7 +340,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -359,18 +359,18 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-04 (0):
+04 (0) (00):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B -> SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-05 (0):
+05 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -381,7 +381,7 @@ Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -400,20 +400,20 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-04 (0):
+04 (0) (00):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
 B -> SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-05 (0):
+05 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
+06 (0) (04):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
@@ -429,7 +429,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -448,19 +448,19 @@ B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-04 (0):
+04 (0) (00):
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, BLUE)
 O -> DIE
-05 (0):
+05 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
+06 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -471,7 +471,7 @@ Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 R    SUPPRESS(UP, RED)
 R    SLEEP
@@ -486,13 +486,13 @@ R    SUPPRESS(SELF, BLUE)
 R -> SUPPRESS(SELF, RED)
 Y    SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
+05 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
+06 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -503,35 +503,16 @@ Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y -> SUPPRESS(SELF, ORANGE)
 O    DIE
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
+05 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. 03 .. 02 .. .. .. 
-.. .. .. .. 00 .. .. .. .. 
-.. .. .. 06 .. 05 .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-00 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-02 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
+06 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -542,34 +523,15 @@ Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y -> SUPPRESS(SELF, ORANGE)
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
+05 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. 03 .. 02 .. .. .. 
-.. .. .. .. 00 .. .. .. .. 
-.. .. .. 06 .. 05 .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-00 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-02 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
+06 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -580,34 +542,15 @@ Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y -> SUPPRESS(SELF, ORANGE)
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
+05 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. 03 .. 02 .. .. .. 
-.. .. .. .. 00 .. .. .. .. 
-.. .. .. 06 .. 05 .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-00 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-02 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
+06 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -618,34 +561,15 @@ Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y -> SUPPRESS(SELF, ORANGE)
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
+05 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. 03 .. 02 .. .. .. 
-.. .. .. .. 00 .. .. .. .. 
-.. .. .. 06 .. 05 .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-00 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-02 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
-Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
+06 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -656,15 +580,91 @@ Y -> SUPPRESS(SELF, ORANGE)
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 Y -> SUPPRESS(SELF, ORANGE)
-02 (0):
+02 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-03 (0):
+03 (0) (01):
 Y -> SUPPRESS(SELF, ORANGE)
-05 (0):
+05 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
-06 (0):
+06 (0) (04):
+Y -> SUPPRESS(SELF, ORANGE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 03 .. 02 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. 06 .. 05 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+Y -> SUPPRESS(SELF, ORANGE)
+02 (0) (01):
+Y -> SUPPRESS(SELF, ORANGE)
+03 (0) (01):
+Y -> SUPPRESS(SELF, ORANGE)
+05 (0) (04):
+Y -> SUPPRESS(SELF, ORANGE)
+06 (0) (04):
+Y -> SUPPRESS(SELF, ORANGE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 03 .. 02 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. 06 .. 05 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+Y -> SUPPRESS(SELF, ORANGE)
+02 (0) (01):
+Y -> SUPPRESS(SELF, ORANGE)
+03 (0) (01):
+Y -> SUPPRESS(SELF, ORANGE)
+05 (0) (04):
+Y -> SUPPRESS(SELF, ORANGE)
+06 (0) (04):
+Y -> SUPPRESS(SELF, ORANGE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 03 .. 02 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. 06 .. 05 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+Y -> SUPPRESS(SELF, ORANGE)
+02 (0) (01):
+Y -> SUPPRESS(SELF, ORANGE)
+03 (0) (01):
+Y -> SUPPRESS(SELF, ORANGE)
+05 (0) (04):
+Y -> SUPPRESS(SELF, ORANGE)
+06 (0) (04):
+Y -> SUPPRESS(SELF, ORANGE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 03 .. 02 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. 06 .. 05 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+Y -> SUPPRESS(SELF, ORANGE)
+02 (0) (01):
+Y -> SUPPRESS(SELF, ORANGE)
+03 (0) (01):
+Y -> SUPPRESS(SELF, ORANGE)
+05 (0) (04):
+Y -> SUPPRESS(SELF, ORANGE)
+06 (0) (04):
 Y -> SUPPRESS(SELF, ORANGE)
 
 

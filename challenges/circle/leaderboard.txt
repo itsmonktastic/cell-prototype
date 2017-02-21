@@ -1,3 +1,4 @@
-stable 0 + 24
-solution1 1 - 100
-solution2 8 - 100
+stable2 0 + 22 12
+stable 0 + 24 14
+solution1 1 - 100 13
+solution2 8 - 100 9

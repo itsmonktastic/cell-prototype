@@ -1,0 +1,875 @@
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R -> SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R -> SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 03 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R -> SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B -> SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+03 (0) (01):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 03 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B -> SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B -> SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 03 .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B -> SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B -> SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. .. 00 05 .. .. .. 
+.. .. .. .. 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B -> SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B -> SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B -> SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+05 (0) (00):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+06 (0) (01):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. .. 00 05 .. .. .. 
+.. .. .. .. 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B -> SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B -> SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B -> SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+06 (0) (01):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. .. 00 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B -> SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+B -> SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B -> SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 00 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B -> SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B -> SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+08 (0) (00):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 00 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B -> SUPPRESS(LEFT, BLUE)
+R    DIE
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B -> SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B -> SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 00 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SPLIT(DOWN)
+R    SUPPRESS(DOWN, RED)
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+R -> DIE
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B -> SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B -> SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B -> SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B -> SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B -> SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B -> SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B -> SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B -> SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B -> SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B -> SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B -> SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B -> SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B -> SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B -> SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B -> SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B -> SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B -> SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B -> SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B -> SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B -> SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+
+

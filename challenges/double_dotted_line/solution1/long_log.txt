@@ -7,7 +7,7 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -44,7 +44,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R -> SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -81,7 +81,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R    SPLIT(UP)
 R -> SUPPRESS(UP, BLUE)
@@ -109,7 +109,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-01 (0):
+01 (0) (00):
 N -> SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -146,7 +146,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -174,7 +174,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SLEEP
 R -> SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -204,7 +204,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -232,7 +232,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SLEEP
 G    SLEEP
 G -> SPLIT(UP)
@@ -252,7 +252,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -280,7 +280,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -291,7 +291,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-02 (0):
+02 (0) (00):
 N -> SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -319,7 +319,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-03 (0):
+03 (0) (01):
 N -> SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -339,7 +339,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -367,7 +367,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -378,7 +378,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-02 (0):
+02 (0) (00):
 N    SLEEP
 R -> SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -399,7 +399,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-03 (0):
+03 (0) (01):
 N    SLEEP
 G -> SLEEP
 G    SPLIT(UP)
@@ -419,7 +419,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -447,7 +447,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-01 (1):
+01 (1) (00):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -458,7 +458,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-02 (0):
+02 (0) (00):
 N    SLEEP
 B    SLEEP
 B -> SPLIT(DOWN)
@@ -469,7 +469,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-03 (0):
+03 (0) (01):
 N    SLEEP
 G    SLEEP
 G -> SPLIT(UP)
@@ -489,7 +489,7 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -510,7 +510,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-01 (1):
+01 (1) (00):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -521,7 +521,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O -> DIE
-02 (0):
+02 (0) (00):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -532,7 +532,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-03 (0):
+03 (0) (01):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -543,7 +543,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-04 (0):
+04 (0) (02):
 N -> SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -554,7 +554,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-05 (0):
+05 (0) (03):
 N -> SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -574,7 +574,7 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -588,7 +588,7 @@ R -> SUPPRESS(SELF, ORANGE)
 R    SUPPRESS(SELF, RED)
 O    LABEL(death)
 O    DIE
-02 (0):
+02 (0) (00):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -599,7 +599,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-03 (0):
+03 (0) (01):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -610,7 +610,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-04 (0):
+04 (0) (02):
 N    SLEEP
 B -> SLEEP
 B    SPLIT(DOWN)
@@ -621,7 +621,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-05 (0):
+05 (0) (03):
 N    SLEEP
 G -> SLEEP
 G    SPLIT(UP)
@@ -641,7 +641,7 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SLEEP
 R    SPLIT(UP)
 R    SUPPRESS(UP, BLUE)
@@ -653,7 +653,7 @@ R    SUPPRESS(SELF, GREEN)
 R    SUPPRESS(SELF, BLUE)
 R    SUPPRESS(SELF, ORANGE)
 R -> SUPPRESS(SELF, RED)
-02 (0):
+02 (0) (00):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -664,7 +664,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-03 (0):
+03 (0) (01):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -675,7 +675,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-04 (0):
+04 (0) (02):
 N    SLEEP
 B    SLEEP
 B -> SPLIT(DOWN)
@@ -686,7 +686,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-05 (0):
+05 (0) (03):
 N    SLEEP
 G    SLEEP
 G -> SPLIT(UP)
@@ -706,9 +706,9 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. 06 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-02 (1):
+02 (1) (00):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -719,7 +719,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-03 (0):
+03 (0) (01):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -730,7 +730,7 @@ G -> SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-04 (0):
+04 (0) (02):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -741,7 +741,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-05 (0):
+05 (0) (03):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -752,7 +752,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-06 (0):
+06 (0) (04):
 N -> SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -763,7 +763,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-07 (0):
+07 (0) (05):
 N -> SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -783,9 +783,9 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. 06 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-02 (1):
+02 (1) (00):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -796,7 +796,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O -> DIE
-03 (0):
+03 (0) (01):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -805,7 +805,7 @@ G    SENSE_CELL(DOWN)
 G    JUMP_IF_TRUE(death)
 G    SUPPRESS(SELF, ORANGE)
 G -> SUPPRESS(SELF, GREEN)
-04 (0):
+04 (0) (02):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -816,7 +816,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-05 (0):
+05 (0) (03):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -827,7 +827,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-06 (0):
+06 (0) (04):
 N    SLEEP
 B -> SLEEP
 B    SPLIT(DOWN)
@@ -838,7 +838,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-07 (0):
+07 (0) (05):
 N    SLEEP
 G -> SLEEP
 G    SPLIT(UP)
@@ -858,9 +858,9 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. 06 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -869,7 +869,7 @@ G    SENSE_CELL(DOWN)
 G    JUMP_IF_TRUE(death)
 G    SUPPRESS(SELF, ORANGE)
 G -> SUPPRESS(SELF, GREEN)
-04 (0):
+04 (0) (02):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -880,7 +880,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-05 (1):
+05 (1) (03):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -891,7 +891,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-06 (0):
+06 (0) (04):
 N    SLEEP
 B    SLEEP
 B -> SPLIT(DOWN)
@@ -902,7 +902,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-07 (0):
+07 (0) (05):
 N    SLEEP
 G    SLEEP
 G -> SPLIT(UP)
@@ -922,11 +922,11 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. 06 .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -937,7 +937,7 @@ B -> SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-05 (1):
+05 (1) (03):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -948,7 +948,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O -> DIE
-06 (0):
+06 (0) (04):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -959,7 +959,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-07 (0):
+07 (0) (05):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -970,7 +970,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-08 (0):
+08 (0) (06):
 N -> SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -990,11 +990,11 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. 06 .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1003,7 +1003,7 @@ B    SENSE_CELL(UP)
 B    JUMP_IF_TRUE(death)
 B    SUPPRESS(SELF, ORANGE)
 B -> SUPPRESS(SELF, BLUE)
-06 (0):
+06 (0) (04):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1014,7 +1014,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-07 (0):
+07 (0) (05):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -1025,7 +1025,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-08 (0):
+08 (0) (06):
 N    SLEEP
 B -> SLEEP
 B    SPLIT(DOWN)
@@ -1045,13 +1045,13 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. 06 .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-06 (0):
+06 (0) (04):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1062,7 +1062,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-07 (0):
+07 (0) (05):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -1073,7 +1073,7 @@ G    SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-08 (0):
+08 (0) (06):
 N    SLEEP
 B    SLEEP
 B -> SPLIT(DOWN)
@@ -1093,13 +1093,13 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. 06 .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-06 (1):
+06 (1) (04):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1110,7 +1110,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O    DIE
-07 (0):
+07 (0) (05):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -1121,7 +1121,7 @@ G -> SUPPRESS(SELF, ORANGE)
 G    SUPPRESS(SELF, GREEN)
 O    LABEL(death)
 O    DIE
-08 (0):
+08 (0) (06):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1141,13 +1141,13 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. 06 .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-06 (1):
+06 (1) (04):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1158,7 +1158,7 @@ B    SUPPRESS(SELF, ORANGE)
 B    SUPPRESS(SELF, BLUE)
 O    LABEL(death)
 O -> DIE
-07 (0):
+07 (0) (05):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -1167,7 +1167,7 @@ G    SENSE_CELL(DOWN)
 G    JUMP_IF_TRUE(death)
 G    SUPPRESS(SELF, ORANGE)
 G -> SUPPRESS(SELF, GREEN)
-08 (0):
+08 (0) (06):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1187,13 +1187,13 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-07 (0):
+07 (0) (05):
 N    SLEEP
 G    SLEEP
 G    SPLIT(UP)
@@ -1202,7 +1202,7 @@ G    SENSE_CELL(DOWN)
 G    JUMP_IF_TRUE(death)
 G    SUPPRESS(SELF, ORANGE)
 G -> SUPPRESS(SELF, GREEN)
-08 (0):
+08 (0) (06):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1222,15 +1222,15 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-07 (0):
+07 (0) (05):
 N -> SLEEP
-08 (0):
+08 (0) (06):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1250,15 +1250,15 @@ O    DIE
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-07 (0):
+07 (0) (05):
 N -> SLEEP
-08 (0):
+08 (0) (06):
 N    SLEEP
 B    SLEEP
 B    SPLIT(DOWN)
@@ -1276,34 +1276,15 @@ B -> SUPPRESS(SELF, BLUE)
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-07 (0):
+07 (0) (05):
 N -> SLEEP
-08 (0):
-N -> SLEEP
-.. .. .. .. 07 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 03 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 00 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 04 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 08 .. .. .. .. 
-00 (0):
-N -> SLEEP
-03 (0):
-N -> SLEEP
-04 (0):
-N -> SLEEP
-07 (0):
-N -> SLEEP
-08 (0):
+08 (0) (06):
 N -> SLEEP
 .. .. .. .. 07 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -1314,34 +1295,15 @@ N -> SLEEP
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-07 (0):
+07 (0) (05):
 N -> SLEEP
-08 (0):
-N -> SLEEP
-.. .. .. .. 07 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 03 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 00 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 04 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 08 .. .. .. .. 
-00 (0):
-N -> SLEEP
-03 (0):
-N -> SLEEP
-04 (0):
-N -> SLEEP
-07 (0):
-N -> SLEEP
-08 (0):
+08 (0) (06):
 N -> SLEEP
 .. .. .. .. 07 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -1352,34 +1314,15 @@ N -> SLEEP
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-07 (0):
+07 (0) (05):
 N -> SLEEP
-08 (0):
-N -> SLEEP
-.. .. .. .. 07 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 03 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 00 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 04 .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. 08 .. .. .. .. 
-00 (0):
-N -> SLEEP
-03 (0):
-N -> SLEEP
-04 (0):
-N -> SLEEP
-07 (0):
-N -> SLEEP
-08 (0):
+08 (0) (06):
 N -> SLEEP
 .. .. .. .. 07 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -1390,15 +1333,72 @@ N -> SLEEP
 .. .. .. .. 04 .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. 08 .. .. .. .. 
-00 (0):
+00 (0) ():
 N -> SLEEP
-03 (0):
+03 (0) (01):
 N -> SLEEP
-04 (0):
+04 (0) (02):
 N -> SLEEP
-07 (0):
+07 (0) (05):
 N -> SLEEP
-08 (0):
+08 (0) (06):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+00 (0) ():
+N -> SLEEP
+03 (0) (01):
+N -> SLEEP
+04 (0) (02):
+N -> SLEEP
+07 (0) (05):
+N -> SLEEP
+08 (0) (06):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+00 (0) ():
+N -> SLEEP
+03 (0) (01):
+N -> SLEEP
+04 (0) (02):
+N -> SLEEP
+07 (0) (05):
+N -> SLEEP
+08 (0) (06):
+N -> SLEEP
+.. .. .. .. 07 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 08 .. .. .. .. 
+00 (0) ():
+N -> SLEEP
+03 (0) (01):
+N -> SLEEP
+04 (0) (02):
+N -> SLEEP
+07 (0) (05):
+N -> SLEEP
+08 (0) (06):
 N -> SLEEP
 
 

@@ -7,7 +7,7 @@
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R -> SPLIT(UP)
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
@@ -26,7 +26,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N -> SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
@@ -36,7 +36,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-01 (0):
+01 (0) (00):
 R -> SPLIT(UP)
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
@@ -55,7 +55,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 B -> SPLIT(DOWN)
@@ -65,7 +65,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SUPPRESS(UP, RED)
 B -> SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -83,7 +83,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
@@ -93,7 +93,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N -> SUPPRESS(DOWN, BLUE)
@@ -102,7 +102,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-02 (0):
+02 (0) (00):
 R -> SPLIT(UP)
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
@@ -121,7 +121,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -130,7 +130,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -139,7 +139,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-02 (0):
+02 (0) (00):
 R    SPLIT(UP)
 N -> SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -157,7 +157,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
@@ -165,7 +165,7 @@ N -> SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -174,7 +174,7 @@ N -> SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-02 (0):
+02 (0) (00):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N -> SUPPRESS(DOWN, BLUE)
@@ -183,7 +183,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-03 (0):
+03 (0) (00):
 R -> SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -192,7 +192,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-04 (0):
+04 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -210,7 +210,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
@@ -218,7 +218,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P -> SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -227,7 +227,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P -> SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-02 (0):
+02 (0) (00):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -236,7 +236,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-03 (0):
+03 (0) (00):
 R    SPLIT(UP)
 N -> SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -244,7 +244,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-04 (0):
+04 (0) (01):
 N    SUPPRESS(UP, RED)
 B -> SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -261,7 +261,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
@@ -269,7 +269,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-01 (0):
+01 (0) (00):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -278,7 +278,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-02 (0):
+02 (0) (00):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -287,7 +287,7 @@ N -> SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-03 (0):
+03 (0) (00):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N -> SUPPRESS(DOWN, BLUE)
@@ -295,7 +295,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-04 (0):
+04 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N -> SUPPRESS(DOWN, BLUE)
@@ -303,7 +303,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-05 (0):
+05 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
@@ -311,7 +311,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-06 (0):
+06 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -320,7 +320,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-07 (0):
+07 (0) (02):
 R -> SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -338,7 +338,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-00 (0):
+00 (0) ():
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
@@ -346,7 +346,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-01 (0):
+01 (0) (00):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -355,7 +355,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-02 (0):
+02 (0) (00):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -364,7 +364,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P -> SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-03 (0):
+03 (0) (00):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -372,7 +372,7 @@ N -> SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-04 (0):
+04 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -380,14 +380,14 @@ N -> SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-05 (0):
+05 (0) (00):
 N    SUPPRESS(UP, RED)
 N -> SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-06 (0):
+06 (0) (01):
 N    SUPPRESS(UP, RED)
 B -> SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -395,7 +395,7 @@ G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-07 (0):
+07 (0) (02):
 R    SPLIT(UP)
 N -> SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -412,7 +412,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-01 (0):
+01 (0) (00):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -421,7 +421,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-02 (0):
+02 (0) (00):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -430,14 +430,14 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-03 (0):
+03 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 P -> SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-04 (0):
+04 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -445,14 +445,14 @@ N    SUPPRESS(RIGHT, GREEN)
 P -> SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-05 (0):
+05 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G -> SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-06 (0):
+06 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N -> SUPPRESS(DOWN, BLUE)
@@ -460,7 +460,7 @@ G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-07 (0):
+07 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N -> SUPPRESS(DOWN, BLUE)
@@ -468,7 +468,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-08 (0):
+08 (0) (02):
 R -> SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -486,7 +486,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-02 (0):
+02 (0) (00):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -495,14 +495,14 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-03 (0):
+03 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-04 (0):
+04 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -510,14 +510,14 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-05 (0):
+05 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
 N -> SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-06 (0):
+06 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -525,7 +525,7 @@ G -> SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-07 (0):
+07 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -533,7 +533,7 @@ N -> SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-08 (0):
+08 (0) (02):
 R    SPLIT(UP)
 N -> SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -542,14 +542,14 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-09 (0):
+09 (0) (03):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-10 (0):
+10 (0) (04):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -566,7 +566,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-02 (0):
+02 (0) (00):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -575,14 +575,14 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-03 (0):
+03 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-04 (0):
+04 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -590,14 +590,14 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-05 (0):
+05 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-06 (0):
+06 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -605,7 +605,7 @@ G    SPLIT(RIGHT)
 N -> SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-07 (0):
+07 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -613,7 +613,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P -> SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-08 (0):
+08 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N -> SUPPRESS(DOWN, BLUE)
@@ -621,13 +621,13 @@ G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-09 (0):
+09 (0) (03):
 N    SUPPRESS(UP, RED)
 N -> SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-10 (0):
+10 (0) (04):
 N    SUPPRESS(UP, RED)
 B -> SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -643,21 +643,21 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-03 (0):
+03 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-05 (0):
+05 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-06 (0):
+06 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -665,7 +665,7 @@ G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-07 (0):
+07 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -673,7 +673,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-08 (0):
+08 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -681,20 +681,20 @@ G -> SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-09 (0):
+09 (0) (03):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 N -> SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-10 (0):
+10 (0) (04):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N -> SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-11 (0):
+11 (0) (07):
 R -> SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -711,14 +711,14 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-05 (0):
+05 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-06 (0):
+06 (0) (01):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
@@ -726,7 +726,7 @@ G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-07 (0):
+07 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -734,7 +734,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-08 (0):
+08 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -742,20 +742,20 @@ G    SPLIT(RIGHT)
 N -> SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-09 (0):
+09 (0) (03):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-10 (0):
+10 (0) (04):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
 N -> SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O    DIE
-11 (0):
+11 (0) (07):
 R    SPLIT(UP)
 N -> SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -771,14 +771,14 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-05 (0):
+05 (0) (00):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-07 (0):
+07 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -786,7 +786,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-08 (0):
+08 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -794,20 +794,20 @@ G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-09 (0):
+09 (0) (03):
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-10 (0):
+10 (0) (04):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-11 (0):
+11 (0) (07):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N -> SUPPRESS(DOWN, BLUE)
@@ -823,7 +823,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-07 (0):
+07 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -831,7 +831,7 @@ N    SUPPRESS(RIGHT, GREEN)
 P    SPLIT(LEFT)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-08 (0):
+08 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -839,14 +839,14 @@ G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-10 (0):
+10 (0) (04):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 N -> SUPPRESS(LEFT, PURPLE)
 O    DIE
-11 (0):
+11 (0) (07):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -862,7 +862,7 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-08 (0):
+08 (0) (02):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -870,14 +870,14 @@ G    SPLIT(RIGHT)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-10 (0):
+10 (0) (04):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-11 (0):
+11 (0) (07):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -893,14 +893,14 @@ O    DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-10 (0):
+10 (0) (04):
 N    SUPPRESS(UP, RED)
 B    SPLIT(DOWN)
 N    SUPPRESS(DOWN, BLUE)
 N    SUPPRESS(RIGHT, GREEN)
 N    SUPPRESS(LEFT, PURPLE)
 O -> DIE
-11 (0):
+11 (0) (07):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)
@@ -916,7 +916,7 @@ O -> DIE
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
-11 (0):
+11 (0) (07):
 R    SPLIT(UP)
 N    SUPPRESS(UP, RED)
 N    SUPPRESS(DOWN, BLUE)

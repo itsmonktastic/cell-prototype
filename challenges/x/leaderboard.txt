@@ -1,2 +1,2 @@
-solution2 0 + 18
-solution1 0 + 21
+solution2 0 + 18 12
+solution1 0 + 21 18

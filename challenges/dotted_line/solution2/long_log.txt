@@ -1,0 +1,383 @@
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R -> SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+01 (0) (00):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R -> SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+01 (0) (00):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B -> SPLIT(UP)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. 01 .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R -> SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+O    DIE
+01 (0) (00):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O -> DIE
+02 (0) (01):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R -> SUPPRESS(SELF, RED)
+02 (0) (01):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+R    SPLIT(UP)
+R -> SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+03 (0) (02):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R -> SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+03 (0) (02):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B -> SPLIT(UP)
+O    DIE
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. 03 .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R -> SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+O    DIE
+03 (0) (02):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O -> DIE
+04 (0) (03):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R -> SUPPRESS(SELF, RED)
+04 (0) (03):
+R -> SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
+R    SPLIT(UP)
+R -> SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R -> SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+B    ACTIVATE(SELF, RED)
+B    SPLIT(UP)
+O    DIE
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R -> SUPPRESS(SELF, ORANGE)
+R    SUPPRESS(SELF, RED)
+O    DIE
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
+R    SPLIT(UP)
+R    SUPPRESS(UP, RED)
+R    SUPPRESS(SELF, BLUE)
+R    SUPPRESS(SELF, ORANGE)
+R -> SUPPRESS(SELF, RED)
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
+.. .. .. .. 04 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 02 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. 00 .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+00 (0) ():
+02 (0) (01):
+04 (0) (03):
+
+

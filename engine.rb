@@ -8,6 +8,8 @@ class Command
   DIE = 'DIE'
   LABEL = 'LABEL'
   SLEEP = 'SLEEP'
+  JUMP = 'JUMP'
+  ACTIVATE = 'ACTIVATE'
 
   class Direction
     attr_accessor :string_name
@@ -51,6 +53,8 @@ class Command
     DIE => [],
     LABEL => [String],
     SLEEP => [],
+    JUMP => [String],
+    ACTIVATE => [Direction, Color]
   }
 
   attr_accessor :type, :parameters, :color, :active
@@ -217,6 +221,17 @@ def simulate_cell_cycle(world, cell)
     simulate_cell_cycle(world, cell)
   when Command::SLEEP
     # Do nothing
+  when Command::JUMP
+    jump_cell(cell, command.parameters[0])
+  when Command::ACTIVATE
+    other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
+    unless other_cell.nil?
+      other_cell.commands.each_with_index do |other_command, i|
+        if other_command.color == command.parameters[1]
+          other_command.active = true
+        end
+      end
+    end
   else
     raise "unknown command #{command.type}"
   end
@@ -308,6 +323,8 @@ COMMAND_MAP = {
   'JUMP_IF_TRUE' => Command::JUMP_IF_TRUE,
   'LABEL' => Command::LABEL,
   'SLEEP' => Command::SLEEP,
+  'JUMP' => Command::JUMP,
+  'ACTIVATE' => Command::ACTIVATE,
 }
 
 ARGUMENT_MAP = {
@@ -327,7 +344,7 @@ def cell_from_file(program_path)
     command_type = COMMAND_MAP[parts[1]]
     raise "unknown command #{parts[1]}" if command_type.nil?
     arguments = parts.drop(2)
-    if command_type != Command::LABEL && command_type != Command::JUMP_IF_TRUE
+    if command_type != Command::LABEL && command_type != Command::JUMP_IF_TRUE && command_type != Command::JUMP
       arguments = arguments.map do |s|
         a = ARGUMENT_MAP[s]
         if a.nil?

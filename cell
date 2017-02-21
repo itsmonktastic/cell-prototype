@@ -173,12 +173,17 @@ class CLI < Thor
     print_leaderboard(challenge, program)
   end
 
-  desc "stats", "show challenges ordered by length of best solution"
+  desc "stats", "show challenges ordered by length of solution"
   def stats
     rows = challenges.map do |challenge|
       leaderboard = parse_leaderboard(challenge)
       next if leaderboard.length == 0
-      program, entry = sort_leaderboard(leaderboard).first
+      sorted = leaderboard.entries.select do |program, entry|
+        entry[:differences] == 0 && entry[:stable]
+      end.sort_by do |program, entry|
+        entry[:commands]
+      end
+      program, entry = sorted.first
       path = program_path(challenge, program)
       {
         challenge: challenge,

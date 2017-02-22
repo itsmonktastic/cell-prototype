@@ -11,7 +11,7 @@ This is a game about programming cells to grow into specific shapes and patterns
 ## How cells work
 
 You start with one cell in the middle of an empty board:
-
+```
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
@@ -21,6 +21,7 @@ You start with one cell in the middle of an empty board:
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. ..
+```
 
 The cell carries with it a program. For example:
 ```
@@ -32,12 +33,13 @@ B SPLIT UP
 B SUPPRESS UP B
 ```
 
-Each command is made up of:
-| Color | Command  | Parameters |
-| ----- | -------- | ---------- |
-| R     | SPLIT    | UP         |
-| B     | SUPPRESS | UP B       |
-| -     | SLEEP    |            |
+Each command is made up of three parts:
+
+| Color  | Comand   | Parameters |
+| ------ | -------  | ---------- |
+| R      | SPLIT    | UP         |
+| B      | SUPPRESS | UP B       |
+| -      | SLEEP    |            |
 
 Each cell executes its commands starting from the first one. Each cycle, every cell looks for its next active command and executes it.
 
@@ -70,14 +72,15 @@ Remove this cell from the board.
 Like SUPPRESS, but makes commands active instead of inactive.
 
 ## Order of operations
-* Each cycle:
-..* For each cell, from oldest to youngest:
-....* Look for the next active command after the one that was previously executed. If loops back to the beginning after the last command. If there are no active commands, do nothing.
-....* Execute the command.
+- Each cycle:
+  - For each cell, from oldest to youngest:
+    - Look for the next active command after the one that was previously executed. Loops back to the beginning after the last command. If there are no active commands, do nothing.
+    - Execute the command.
 
 ## Challenges
 
 A challenge is a target board state, e.g.:
+```
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. XX .. .. .. .. 
@@ -87,6 +90,7 @@ A challenge is a target board state, e.g.:
 .. .. .. .. XX .. .. .. .. 
 .. .. .. .. .. .. .. .. .. 
 .. .. .. .. .. .. .. .. ..
+```
 
 "XX" means a the space contains a cell. ".." means the space is empty. Your program is a "solution" to the challenge if it ever reaches the target board state. Your program is considered a "stable solution" if it remains in that board state for 20 cycles. Programs are ranked according to:
 1. How many errors they have after 100 cycles, if they are not a solution

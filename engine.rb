@@ -108,7 +108,7 @@ class Cell
   end
 end
 
-class World
+class Simulation
   attr_accessor :grid , :next_cell_id, :cells
 
   DEFAULT_GRID_SIZE = 9
@@ -155,13 +155,13 @@ def print_grid(grid, log)
   end
 end
 
-def print_world(world, log, long_log)
-  print_grid(world.grid, log)
-  print_grid(world.grid, long_log)
+def print_simulation(simulation, log, long_log)
+  print_grid(simulation.grid, log)
+  print_grid(simulation.grid, long_log)
 
   log.write("\n")
 
-  world.cells.each do |cell|
+  simulation.cells.each do |cell|
     print_cell(cell, long_log)
   end
 end
@@ -186,7 +186,7 @@ def print_cell(cell, log)
   end
 end
 
-def simulate_cell_cycle(world, cell)
+def simulate_cell_cycle(simulation, cell)
   return if cell.is_new || no_active_commands?(cell)
   move_past_inactive_commands(cell)
   command = cell.commands[cell.program_counter]
@@ -194,7 +194,7 @@ def simulate_cell_cycle(world, cell)
 
   case command.opcode
   when OpCode::SPLIT
-    existing_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
+    existing_cell = cell_at_relative_location(simulation, cell.row, cell.col, command.parameters[0])
     return unless existing_cell.nil?
     row, col = relative_location(cell.row, cell.col, command.parameters[0])
     new_cell = cell = Cell.new(
@@ -203,9 +203,9 @@ def simulate_cell_cycle(world, cell)
       commands: cell.commands.map(&:dup),
       parent: cell,
     )
-    world.add_cell(new_cell)
+    simulation.add_cell(new_cell)
   when OpCode::SUPPRESS
-    other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
+    other_cell = cell_at_relative_location(simulation, cell.row, cell.col, command.parameters[0])
     unless other_cell.nil?
       other_cell.commands.each_with_index do |other_command, i|
         if other_command.color == command.parameters[1]
@@ -215,10 +215,10 @@ def simulate_cell_cycle(world, cell)
       move_past_inactive_commands(other_cell)
     end
   when OpCode::DIE
-    world.grid[cell.row][cell.col] = nil
-    world.cells.delete(cell)
+    simulation.grid[cell.row][cell.col] = nil
+    simulation.cells.delete(cell)
   when OpCode::SENSE_CELL
-    other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
+    other_cell = cell_at_relative_location(simulation, cell.row, cell.col, command.parameters[0])
     cell.register = !(other_cell.nil?)
   when OpCode::JUMP_IF_TRUE
     if cell.register
@@ -227,13 +227,13 @@ def simulate_cell_cycle(world, cell)
   when OpCode::LABEL
     return if no_active_commands?(cell)
     advance_program_counter(cell)
-    simulate_cell_cycle(world, cell)
+    simulate_cell_cycle(simulation, cell)
   when OpCode::SLEEP
     # Do nothing
   when OpCode::JUMP
     jump_cell(cell, command.parameters[0])
   when OpCode::ACTIVATE
-    other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
+    other_cell = cell_at_relative_location(simulation, cell.row, cell.col, command.parameters[0])
     unless other_cell.nil?
       other_cell.commands.each_with_index do |other_command, i|
         if other_command.color == command.parameters[1]
@@ -278,9 +278,9 @@ def jump_cell(cell, label)
   raise "Unknown label #{label}"
 end
 
-def cell_at_relative_location(world, row, col, direction)
+def cell_at_relative_location(simulation, row, col, direction)
   new_row, new_col = relative_location(row, col, direction)
-  row = world.grid[new_row]
+  row = simulation.grid[new_row]
   row[new_col] unless row.nil?
 end
 
@@ -301,11 +301,11 @@ def relative_location(row, col, direction)
   end
 end
 
-def simulate_world_cycle(world)
-  world.cells.each do |cell|
-    simulate_cell_cycle(world, cell)
+def simulate_cycle(simulation)
+  simulation.cells.each do |cell|
+    simulate_cell_cycle(simulation, cell)
   end
-  world.grid.each do |cells|
+  simulation.grid.each do |cells|
     cells.each do |cell|
       unless cell.nil?
         cell.is_new = false
@@ -388,16 +388,16 @@ def target_from_file(target_path)
 end
 
 def simulate(program_commands, target, log1, log2)
-  world = World.new(program_commands: program_commands)
+  simulation = Simulation.new(program_commands: program_commands)
   cycles_elapsed = 0
   differences = -1
   cycles_with_zero_differences = 0
   stable = false
   100.times do |i|
-    simulate_world_cycle(world)
-    print_world(world, log1, log2)
+    simulate_cycle(simulation)
+    print_simulation(simulation, log1, log2)
     cycles_elapsed += 1
-    differences = count_differences(target, world.grid)
+    differences = count_differences(target, simulation.grid)
     if differences == 0
       cycles_with_zero_differences += 1
     else
@@ -411,7 +411,7 @@ def simulate(program_commands, target, log1, log2)
   log1.write("\n\n")
   log2.write("\n\n")
 
-  [world, differences, stable, cycles_elapsed]
+  [simulation, differences, stable, cycles_elapsed]
 end
 
 def print_target(target)

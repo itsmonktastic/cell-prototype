@@ -60,13 +60,13 @@ class CLI < Thor
 
     log_path = "#{challenge_path(challenge)}/#{program}/log.txt"
     long_log_path = "#{challenge_path(challenge)}/#{program}/long_log.txt"
-    world = nil
+    simulation = nil
     differences = nil
     stable = nil
     cycles = nil
     File.open(log_path, 'w') do |log|
       File.open(long_log_path, 'w') do |long_log|
-        world, differences, stable, cycles = simulate(commands, target, log, long_log)
+        simulation, differences, stable, cycles = simulate(commands, target, log, long_log)
       end
     end
 
@@ -86,7 +86,7 @@ class CLI < Thor
     puts "target:"
     print_target(target)
     puts "actual:"
-    print_grid(world.grid, $stdout)
+    print_grid(simulation.grid, $stdout)
     puts "Logs in:\n#{log_path}\n#{long_log_path}\n"
     print_leaderboard(challenge, program)
   end

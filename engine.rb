@@ -88,9 +88,7 @@ end
 class Cell
   attr_accessor :commands, :id, :program_counter, :is_new, :row, :col, :register, :parent
 
-  def initialize(row:, col:, commands:, parent:)
-    self.row = row
-    self.col = col
+  def initialize(commands:, parent:)
     self.commands = commands
     self.parent = parent
 
@@ -110,31 +108,33 @@ end
 
 class Simulation
   attr_accessor :grid , :next_cell_id, :cells
+  attr_reader :num_rows, :num_cols
 
   DEFAULT_GRID_SIZE = 9
 
-  def initialize(program_commands:, grid_size: DEFAULT_GRID_SIZE)
+  def initialize(program_commands:, num_rows: DEFAULT_GRID_SIZE, num_cols: DEFAULT_GRID_SIZE)
     zygote = Cell.new(
-      row: grid_size/2,
-      col: grid_size/2,
       commands: program_commands,
       parent: nil,
     )
-    self.grid = Array.new(grid_size) { Array.new(grid_size) }
+    @num_rows = num_rows
+    @num_cols = num_cols
+    self.grid = Array.new(num_rows) { Array.new(num_cols) }
     self.next_cell_id = 0
     self.cells = []
 
-    self.add_cell(zygote)
+    self.add_cell(cell: zygote, row: num_rows/2, col: num_cols/2)
   end
 
-  def add_cell(cell)
-    return if cell.row < 0 || cell.row >= grid.length
-    return if cell.col < 0 || cell.col >= grid[0].length
+  def add_cell(cell:, row:, col:)
+    if row < 0 || row >= num_rows || col < 0 || col >= num_cols
+      raise "(#{row}, #{col}) is off the grid"
+    end
+    raise "(#{row}, #{col}) is not empty" unless self.grid[row][col].nil?
 
-    current_contents = self.grid[cell.row][cell.col]
-    return unless current_contents.nil?
-
-    self.grid[cell.row][cell.col] = cell
+    self.grid[row][col] = cell
+    cell.row = row
+    cell.col = col
     cell.id = self.next_cell_id
     self.next_cell_id += 1
     self.cells << cell
@@ -194,16 +194,14 @@ def simulate_cell_cycle(simulation, cell)
 
   case command.opcode
   when OpCode::SPLIT
-    existing_cell = cell_at_relative_location(simulation, cell.row, cell.col, command.parameters[0])
-    return unless existing_cell.nil?
     row, col = relative_location(cell.row, cell.col, command.parameters[0])
-    new_cell = cell = Cell.new(
-      row: row,
-      col: col,
-      commands: cell.commands.map(&:dup),
-      parent: cell,
-    )
-    simulation.add_cell(new_cell)
+    if space_empty?(simulation, row, col)
+      new_cell = cell = Cell.new(
+        commands: cell.commands.map(&:dup),
+        parent: cell,
+      )
+      simulation.add_cell(cell: new_cell, row: row, col: col)
+    end
   when OpCode::SUPPRESS
     other_cell = cell_at_relative_location(simulation, cell.row, cell.col, command.parameters[0])
     unless other_cell.nil?
@@ -244,6 +242,15 @@ def simulate_cell_cycle(simulation, cell)
   else
     raise "unknown command #{command.opcode}"
   end
+end
+
+def space_empty?(simulation, row, col)
+  return false if row < 0
+  return false if row >= simulation.num_rows
+  return false if col < 0
+  return false if col >= simulation.num_cols
+
+  simulation.grid[row][col].nil?
 end
 
 def no_active_commands?(cell)

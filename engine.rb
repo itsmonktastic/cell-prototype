@@ -88,14 +88,15 @@ end
 class Cell
   attr_accessor :commands, :id, :program_counter, :is_new, :row, :col, :register, :parent
 
-  def initialize(row, col)
-    self.commands = []
-    self.program_counter = 0
-    self.is_new = true
+  def initialize(row:, col:, commands:, parent:)
     self.row = row
     self.col = col
+    self.commands = commands
+    self.parent = parent
+
+    self.program_counter = 0
+    self.is_new = true
     self.register = false
-    self.parent = nil
   end
 
   def pretty_id
@@ -190,9 +191,12 @@ def simulate_cell_cycle(world, cell)
     existing_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
     return unless existing_cell.nil?
     row, col = relative_location(cell.row, cell.col, command.parameters[0])
-    new_cell = Cell.new(row, col)
-    new_cell.parent = cell
-    new_cell.commands = cell.commands.map(&:dup)
+    new_cell = cell = Cell.new(
+      row: row,
+      col: col,
+      commands: cell.commands.map(&:dup),
+      parent: cell,
+    )
     world.add_cell(new_cell)
   when OpCode::SUPPRESS
     other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
@@ -357,8 +361,12 @@ def cell_from_file(program_path)
     Command.new(command_type, arguments, color)
   end
 
-  cell = Cell.new(4, 4)
-  cell.commands = commands
+  cell = Cell.new(
+    row: 4,
+    col: 4,
+    commands: commands,
+    parent: nil,
+  )
 
   cell
 end

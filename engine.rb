@@ -435,3 +435,89 @@ def count_differences(target, actual)
 
   differences
 end
+
+def challenge_path(challenge)
+  "challenges/#{challenge}"
+end
+
+def list_challenges
+  Dir.entries("challenges").reject { |e| e[0] == '.' }
+end
+
+def list_programs(challenge)
+  Dir.entries("challenges/#{challenge}")
+    .reject { |e| e[0] == '.' }
+    .select { |e| File.directory?("challenges/#{challenge}/#{e}") }
+end
+
+def leaderboard_path(challenge)
+  "challenges/#{challenge}/leaderboard.txt"
+end
+
+def parse_leaderboard(challenge)
+  path = leaderboard_path(challenge)
+  FileUtils.touch(path)
+  lines = File.read(path).split("\n")
+  Hash[lines.map { |line| deserialize_leaderboard_row(line) }]
+end
+
+def sort_leaderboard(leaderboard)
+  leaderboard.entries.sort_by do |program, row|
+    serialize_leaderboard_row(row)
+  end
+end
+
+def serialize_leaderboard_row(row)
+  "#{row[:differences]} #{row[:stable] ? '+' : '-'} #{row[:cycles]} #{row[:commands]}"
+end
+
+def deserialize_leaderboard_row(row)
+  parts = row.split(" ")
+  [parts[0], {
+    differences: parts[1].to_i,
+    stable: parts[2] == '+',
+    cycles: parts[3].to_i,
+    commands: parts[4].to_i
+  }]
+end
+
+def save_leaderboard(challenge, leaderboard)
+  path = leaderboard_path(challenge)
+  data = sort_leaderboard(leaderboard).map do |program, row|
+    "#{program} #{serialize_leaderboard_row(row)}"
+  end.join("\n")
+  File.write(path, data)
+end
+
+def update_leaderboard(challenge, program, differences, stable, cycles)
+  leaderboard = parse_leaderboard(challenge)
+  leaderboard[program] = {
+    differences: differences,
+    stable: stable,
+    cycles: cycles,
+    commands: cell_from_file(program_path(challenge, program)).commands.length,
+  }
+  save_leaderboard(challenge, leaderboard)
+end
+
+def program_path(challenge, program)
+  "challenges/#{challenge}/#{program}/#{program}.cell"
+end
+
+def print_leaderboard(challenge, you=nil)
+  leaderboard = parse_leaderboard(challenge)
+  rows = sort_leaderboard(leaderboard).map do |program, value|
+    if program == you
+      prefix = "* "
+    else
+      prefix = "  "
+    end
+    [prefix + program_path(challenge, program), value[:differences], value[:stable], value[:commands], value[:cycles]]
+  end
+  table = Terminal::Table.new(
+    headings: ["Solution", "Errors", "Stable?", "# Commands", "# Cycles"],
+    rows: rows,
+  )
+  puts "LEADERBOARD"
+  puts table
+end

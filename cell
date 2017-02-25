@@ -5,98 +5,16 @@ require 'terminal-table'
 require 'thor'
 
 require_relative 'engine.rb'
-
-def challenges
-  Dir.entries("challenges").reject { |e| e[0] == '.' }
-end
-
-def programs(challenge)
-  Dir.entries("challenges/#{challenge}")
-    .reject { |e| e[0] == '.' }
-    .select { |e| File.directory?("challenges/#{challenge}/#{e}") }
-end
-
-def leaderboard_path(challenge)
-  "challenges/#{challenge}/leaderboard.txt"
-end
-
-def parse_leaderboard(challenge)
-  path = leaderboard_path(challenge)
-  FileUtils.touch(path)
-  lines = File.read(path).split("\n")
-  Hash[lines.map { |line| deserialize_leaderboard_row(line) }]
-end
-
-def sort_leaderboard(leaderboard)
-  leaderboard.entries.sort_by do |program, row|
-    serialize_leaderboard_row(row)
-  end
-end
-
-def serialize_leaderboard_row(row)
-  "#{row[:differences]} #{row[:stable] ? '+' : '-'} #{row[:cycles]} #{row[:commands]}"
-end
-
-def deserialize_leaderboard_row(row)
-  parts = row.split(" ")
-  [parts[0], {
-    differences: parts[1].to_i,
-    stable: parts[2] == '+',
-    cycles: parts[3].to_i,
-    commands: parts[4].to_i
-  }]
-end
-
-def save_leaderboard(challenge, leaderboard)
-  path = leaderboard_path(challenge)
-  data = sort_leaderboard(leaderboard).map do |program, row|
-    "#{program} #{serialize_leaderboard_row(row)}"
-  end.join("\n")
-  File.write(path, data)
-end
-
-def update_leaderboard(challenge, program, differences, stable, cycles)
-  leaderboard = parse_leaderboard(challenge)
-  leaderboard[program] = {
-    differences: differences,
-    stable: stable,
-    cycles: cycles,
-    commands: cell_from_file(program_path(challenge, program)).commands.length,
-  }
-  save_leaderboard(challenge, leaderboard)
-end
-
-def program_path(challenge, program)
-  "challenges/#{challenge}/#{program}/#{program}.cell"
-end
-
-def print_leaderboard(challenge, you=nil)
-  leaderboard = parse_leaderboard(challenge)
-  rows = sort_leaderboard(leaderboard).map do |program, value|
-    if program == you
-      prefix = "* "
-    else
-      prefix = "  "
-    end
-    [prefix + program_path(challenge, program), value[:differences], value[:stable], value[:cycles], value[:commands]]
-  end
-  table = Terminal::Table.new(
-    headings: ["Solution", "Errors", "Stable?", "Cycles", "# Commands"],
-    rows: rows,
-  )
-  puts "LEADERBOARD"
-  puts table
-end
  
 class CLI < Thor
   desc "list", "list names of all challenges"
   def list
-    puts challenges
+    puts list_challenges
   end
 
   desc "describe CHALLENGE", "Print of details for CHALLENGE"
   def describe(challenge)
-    target = File.read("challenges/#{challenge}/target.txt")
+    target = File.read("#{challenge_path(challenge)}/target.txt")
     puts "Target:"
     puts target
     print_leaderboard(challenge)
@@ -108,16 +26,16 @@ class CLI < Thor
       puts "A challenge with that name already exists."
       return
     end
-    FileUtils.mkdir("challenges/#{challenge}")
-    target_path = "challenges/#{challenge}/target.txt"
+    FileUtils.mkdir(challenge_path(challenge))
+    target_path = "#{challenge_path(challenge)}/target.txt"
     FileUtils.cp('fixtures/sample.txt', target_path)
     puts "Fill in #{target_path}"
   end
 
   desc "attempt_all", "Run all programs and record results"
   def attempt_all
-    challenges.each do |challenge|
-      programs(challenge).each do |program|
+    list_challenges.each do |challenge|
+      list_programs(challenge).each do |program|
         attempt(challenge, program)
       end
     end
@@ -125,27 +43,27 @@ class CLI < Thor
 
   desc "attempt CHALLENGE PROGRAM", "Run PROGRAM on CHALLENGE and measure record results"
   def attempt(challenge, program)
-    unless challenges.include?(challenge)
+    unless list_challenges.include?(challenge)
       raise "no exiting challenge named #{challenge}"
     end
 
-    FileUtils.mkdir_p("challenges/#{challenge}/#{program}")
+    FileUtils.mkdir_p("#{challenge_path(challenge)}/#{program}")
     FileUtils.touch(program_path(challenge, program))
     program_bytes = File.read(program_path(challenge, program))
     if program_bytes.strip.length == 0
       puts "Write your program in #{program_path(challenge, program)}"
       return
     end
+
     zygote = cell_from_file(program_path(challenge, program))
+    target = target_from_file("#{challenge_path(challenge)}/target.txt")
 
-    target = target_from_file("challenges/#{challenge}/target.txt")
-
-    log_path = "challenges/#{challenge}/#{program}/log.txt"
-    long_log_path = "challenges/#{challenge}/#{program}/long_log.txt"
+    log_path = "#{challenge_path(challenge)}/#{program}/log.txt"
+    long_log_path = "#{challenge_path(challenge)}/#{program}/long_log.txt"
     world = nil
     differences = nil
-    cycles = nil
     stable = nil
+    cycles = nil
     File.open(log_path, 'w') do |log|
       File.open(long_log_path, 'w') do |long_log|
         world, differences, stable, cycles = simulate(zygote, target, log, long_log)
@@ -169,34 +87,34 @@ class CLI < Thor
     print_target(target)
     puts "actual:"
     print_grid(world.grid, $stdout)
-    puts "Logs in #{log_path}\n#{long_log_path}\n"
+    puts "Logs in:\n#{log_path}\n#{long_log_path}\n"
     print_leaderboard(challenge, program)
   end
 
   desc "stats", "show challenges ordered by length of solution"
   def stats
-    rows = challenges.map do |challenge|
+    rows = list_challenges.map do |challenge|
       leaderboard = parse_leaderboard(challenge)
       next if leaderboard.length == 0
-      sorted = leaderboard.entries.select do |program, entry|
-        entry[:differences] == 0 && entry[:stable]
-      end.sort_by do |program, entry|
-        entry[:commands]
+      sorted = leaderboard.entries.select do |program, program_stats|
+        program_stats[:differences] == 0 && program_stats[:stable]
+      end.sort_by do |program, program_stats|
+        program_stats[:commands]
       end
-      program, entry = sorted.first
+      program, program_stats = sorted.first
       path = program_path(challenge, program)
       {
         challenge: challenge,
         program: path,
-        cycles: entry[:cycles],
         commands: cell_from_file(path).commands.length,
+        cycles: program_stats[:cycles],
       }
     end.compact.sort_by do |row|
       row[:commands]
     end
 
     table = Terminal::Table.new(
-      headings: ["Program", "Challenge", "# Commands", "Cycles"],
+      headings: ["Program", "Challenge", "# Commands", "# Cycles"],
       rows: rows.map do |row|
         [row[:program], row[:challenge], row[:commands], row[:cycles]]
       end,

@@ -41,31 +41,31 @@ end
 
 class Command
   PARAMETERS = {
-    OpCode::SPLIT => [Direction],
-    OpCode::SENSE_CELL => [Direction],
-    OpCode::JUMP_IF_TRUE => [String],
-    OpCode::SUPPRESS => [Direction, Color],
+    OpCode::ACTIVATE => [Direction, Color],
     OpCode::DIE => [],
-    OpCode::LABEL => [String],
-    OpCode::SLEEP => [],
     OpCode::JUMP => [String],
-    OpCode::ACTIVATE => [Direction, Color]
+    OpCode::JUMP_IF_TRUE => [String],
+    OpCode::LABEL => [String],
+    OpCode::SENSE_CELL => [Direction],
+    OpCode::SLEEP => [],
+    OpCode::SPLIT => [Direction],
+    OpCode::SUPPRESS => [Direction, Color],
   }
 
-  attr_accessor :type, :parameters, :color, :active
+  attr_accessor :opcode, :parameters, :color, :active
 
-  def initialize(type, parameters=[], color=NONE)
-    self.type = type
+  def initialize(opcode, parameters=[], color=Color::NONE)
+    self.opcode = opcode
     self.color = color
     self.active = true
     
-    if parameters.length != PARAMETERS[type].length
-      raise "Expected #{PARAMETERS[type].length} parameters, got #{parameters.length}, for #{type}"
+    if parameters.length != PARAMETERS[opcode].length
+      raise "Expected #{PARAMETERS[opcode].length} parameters, got #{parameters.length}, for #{opcode}"
     end
 
-    PARAMETERS[type].each_with_index do |param_type, i|
+    PARAMETERS[opcode].each_with_index do |param_type, i|
       unless parameters[i].kind_of?(param_type)
-        raise "Expected a #{param_type} for command #{type} but got a #{parameters[i].class} at position #{i}"
+        raise "Expected a #{param_type} for command #{opcode} but got a #{parameters[i].class} at position #{i}"
       end
     end
 
@@ -73,11 +73,15 @@ class Command
   end
 
   def to_s
-    "#{self.type}"
+    s = "#{self.opcode}"
+    if self.parameters.length > 0
+      s += "(#{self.parameters.join(", ")})"
+    end
+    s
   end
 
-  def pretty_color
-    self.color.string_name[0]
+  def short_color
+    self.color.to_s[0]
   end
 end
 
@@ -162,7 +166,7 @@ def print_cell(cell, log)
     if command.color.nil?
       log.write("  ")
     else
-      log.write("#{command.pretty_color} ")
+      log.write("#{command.short_color} ")
     end
     if cell.program_counter == i
       log.write("-> ")
@@ -170,9 +174,6 @@ def print_cell(cell, log)
       log.write("   ")
     end
     log.write(command.to_s)
-    if command.parameters.length > 0
-      log.write("(#{command.parameters.join(", ")})")
-    end
 
     log.write("\n")
   end
@@ -184,7 +185,7 @@ def simulate_cell_cycle(world, cell)
   command = cell.commands[cell.program_counter]
   advance_program_counter(cell)
 
-  case command.type
+  case command.opcode
   when OpCode::SPLIT
     existing_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
     return unless existing_cell.nil?
@@ -231,13 +232,13 @@ def simulate_cell_cycle(world, cell)
       end
     end
   else
-    raise "unknown command #{command.type}"
+    raise "unknown command #{command.opcode}"
   end
 end
 
 def no_active_commands?(cell)
   cell.commands.all? do |command|
-    !command.active || command.type == OpCode::LABEL
+    !command.active || command.opcode == OpCode::LABEL
   end
 end
 
@@ -250,7 +251,7 @@ end
 
 def move_past_inactive_commands(cell)
   return if no_active_commands?(cell)
-  while !cell.commands[cell.program_counter].active || cell.commands[cell.program_counter].type == OpCode::LABEL
+  while !cell.commands[cell.program_counter].active || cell.commands[cell.program_counter].opcode == OpCode::LABEL
     cell.program_counter += 1
     cell.program_counter %= cell.commands.length
   end
@@ -258,7 +259,7 @@ end
 
 def jump_cell(cell, label)
   cell.commands.each_with_index do |command, i|
-    if command.type == OpCode::LABEL && command.parameters[0] == label
+    if command.opcode == OpCode::LABEL && command.parameters[0] == label
       cell.program_counter = i
       advance_program_counter(cell)
       return

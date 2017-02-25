@@ -54,7 +54,7 @@ class Command
 
   attr_accessor :opcode, :parameters, :color, :active
 
-  def initialize(opcode, parameters=[], color=Color::NONE)
+  def initialize(opcode:, parameters: [], color: Color::NONE)
     self.opcode = opcode
     self.color = color
     self.active = true
@@ -113,8 +113,14 @@ class World
 
   DEFAULT_GRID_SIZE = 9
 
-  def initialize(zygote:)
-    self.grid = Array.new(DEFAULT_GRID_SIZE) { Array.new(DEFAULT_GRID_SIZE) }
+  def initialize(program_commands:, grid_size: DEFAULT_GRID_SIZE)
+    zygote = Cell.new(
+      row: grid_size/2,
+      col: grid_size/2,
+      commands: program_commands,
+      parent: nil,
+    )
+    self.grid = Array.new(grid_size) { Array.new(grid_size) }
     self.next_cell_id = 0
     self.cells = []
 
@@ -338,7 +344,7 @@ ARGUMENT_MAP = {
   'SELF' => Direction::SELF,
 }.merge(COLOR_MAP)
 
-def cell_from_file(program_path)
+def commands_from_file(program_path)
   lines = File.read(program_path).split("\n")
   commands = lines.reject do |line|
     line.strip.length == 0
@@ -348,9 +354,9 @@ def cell_from_file(program_path)
     raise "unknown color #{parts[0]}" if color.nil?
     command_type = COMMAND_MAP[parts[1]]
     raise "unknown command #{parts[1]}" if command_type.nil?
-    arguments = parts.drop(2)
+    parameters = parts.drop(2)
     if command_type != OpCode::LABEL && command_type != OpCode::JUMP_IF_TRUE && command_type != OpCode::JUMP
-      arguments = arguments.map do |s|
+      parameters = parameters.map do |s|
         a = ARGUMENT_MAP[s]
         if a.nil?
           raise "Unable to parse #{s}"
@@ -358,17 +364,12 @@ def cell_from_file(program_path)
         a
       end
     end
-    Command.new(command_type, arguments, color)
+    Command.new(
+      opcode: command_type,
+      parameters: parameters,
+      color: color,
+    )
   end
-
-  cell = Cell.new(
-    row: 4,
-    col: 4,
-    commands: commands,
-    parent: nil,
-  )
-
-  cell
 end
 
 def target_from_file(target_path)
@@ -386,8 +387,8 @@ def target_from_file(target_path)
   end
 end
 
-def simulate(zygote, target, log1, log2)
-  world = World.new(zygote: zygote)
+def simulate(program_commands, target, log1, log2)
+  world = World.new(program_commands: program_commands)
   cycles_elapsed = 0
   differences = -1
   cycles_with_zero_differences = 0
@@ -499,7 +500,7 @@ def update_leaderboard(challenge, program, differences, stable, cycles)
     differences: differences,
     stable: stable,
     cycles: cycles,
-    commands: cell_from_file(program_path(challenge, program)).commands.length,
+    commands: commands_from_file(program_path(challenge, program)).length,
   }
   save_leaderboard(challenge, leaderboard)
 end

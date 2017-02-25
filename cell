@@ -55,7 +55,7 @@ class CLI < Thor
       return
     end
 
-    zygote = cell_from_file(program_path(challenge, program))
+    commands = commands_from_file(program_path(challenge, program))
     target = target_from_file("#{challenge_path(challenge)}/target.txt")
 
     log_path = "#{challenge_path(challenge)}/#{program}/log.txt"
@@ -66,7 +66,7 @@ class CLI < Thor
     cycles = nil
     File.open(log_path, 'w') do |log|
       File.open(long_log_path, 'w') do |long_log|
-        world, differences, stable, cycles = simulate(zygote, target, log, long_log)
+        world, differences, stable, cycles = simulate(commands, target, log, long_log)
       end
     end
 
@@ -106,7 +106,7 @@ class CLI < Thor
       {
         challenge: challenge,
         program: path,
-        commands: cell_from_file(path).commands.length,
+        commands: commands_from_file(path).commands.length,
         cycles: program_stats[:cycles],
       }
     end.compact.sort_by do |row|

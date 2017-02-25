@@ -1,2 +1,2 @@
-solution2 0 + 18 12
-solution1 0 + 21 18
+cstack_1 0 + 18 12
+cstack_0 0 + 21 18

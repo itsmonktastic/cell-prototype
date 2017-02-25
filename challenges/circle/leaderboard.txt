@@ -1,4 +1,4 @@
-stable2 0 + 22 12
-stable 0 + 24 14
-solution1 1 - 100 13
-solution2 8 - 100 9
+cstack_3 0 + 22 12
+cstack_2 0 + 24 14
+cstack_0 1 - 100 13
+cstack_1 8 - 100 9

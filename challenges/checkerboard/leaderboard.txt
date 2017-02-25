@@ -1,3 +1,3 @@
-solution3 0 + 50 13
-solution2 24 - 100 11
-solution1 38 - 100 11
+cstack_2 0 + 50 13
+cstack_1 24 - 100 11
+cstack_0 38 - 100 11

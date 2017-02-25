@@ -1,60 +1,55 @@
+class Enum
+  attr_accessor :string_name
+  def initialize(string_name)
+    self.string_name = string_name
+  end
+
+  def to_s
+    self.string_name
+  end
+end
+
+class OpCode < Enum
+  ACTIVATE = new('ACTIVATE')
+  DIE = new('DIE')
+  JUMP = new('JUMP')
+  JUMP_IF_TRUE = new('JUMP_IF_TRUE')
+  LABEL = new('LABEL')
+  SENSE_CELL = new('SENSE_CELL')
+  SLEEP = new('SLEEP')
+  SPLIT = new('SPLIT')
+  SUPPRESS = new('SUPPRESS')
+end
+
+class Direction < Enum
+  DOWN = new('DOWN')
+  LEFT = new('LEFT')
+  RIGHT = new('RIGHT')
+  SELF = new('SELF')
+  UP = new('UP')
+end
+
+class Color < Enum
+  BLUE = new('BLUE')
+  GREEN = new('GREEN')
+  NONE = new('NONE')
+  ORANGE = new('ORANGE')
+  PURPLE = new('PURPLE')
+  RED = new('RED')
+  YELLOW = new('YELLOW')
+end
+
 class Command
-  SPLIT = 'SPLIT'
-  SEND_SIGNAL = 'SEND_SIGNAL'
-  SENSE_SIGNAL = 'SENSE_SIGNAL'
-  SENSE_CELL = 'SENSE_CELL'
-  JUMP_IF_TRUE = 'JUMP_IF_TRUE'
-  SUPPRESS = 'SUPPRESS'
-  DIE = 'DIE'
-  LABEL = 'LABEL'
-  SLEEP = 'SLEEP'
-  JUMP = 'JUMP'
-  ACTIVATE = 'ACTIVATE'
-
-  class Direction
-    attr_accessor :string_name
-    def initialize(string_name)
-      self.string_name = string_name
-    end
-    def to_s
-      self.string_name
-    end
-  end
-  UP = Direction.new('UP')
-  DOWN = Direction.new('DOWN')
-  LEFT = Direction.new('LEFT')
-  RIGHT = Direction.new('RIGHT')
-  SELF = Direction.new('SELF')
-
-  class Color
-    attr_accessor :string_name
-    def initialize(string_name)
-      self.string_name = string_name
-    end
-    def to_s
-      self.string_name
-    end
-  end
-  NONE = Color.new('NONE')
-  RED = Color.new('RED')
-  BLUE = Color.new('BLUE')
-  GREEN = Color.new('GREEN')
-  YELLOW = Color.new('YELLOW')
-  PURPLE = Color.new('PURPLE')
-  ORANGE = Color.new('ORANGE')
-
   PARAMETERS = {
-    SPLIT => [Direction],
-    SEND_SIGNAL => [Direction],
-    SENSE_SIGNAL => [Direction],
-    SENSE_CELL => [Direction],
-    JUMP_IF_TRUE => [String],
-    SUPPRESS => [Direction, Color],
-    DIE => [],
-    LABEL => [String],
-    SLEEP => [],
-    JUMP => [String],
-    ACTIVATE => [Direction, Color]
+    OpCode::SPLIT => [Direction],
+    OpCode::SENSE_CELL => [Direction],
+    OpCode::JUMP_IF_TRUE => [String],
+    OpCode::SUPPRESS => [Direction, Color],
+    OpCode::DIE => [],
+    OpCode::LABEL => [String],
+    OpCode::SLEEP => [],
+    OpCode::JUMP => [String],
+    OpCode::ACTIVATE => [Direction, Color]
   }
 
   attr_accessor :type, :parameters, :color, :active
@@ -190,7 +185,7 @@ def simulate_cell_cycle(world, cell)
   advance_program_counter(cell)
 
   case command.type
-  when Command::SPLIT
+  when OpCode::SPLIT
     existing_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
     return unless existing_cell.nil?
     row, col = relative_location(cell.row, cell.col, command.parameters[0])
@@ -198,7 +193,7 @@ def simulate_cell_cycle(world, cell)
     new_cell.parent = cell
     new_cell.commands = cell.commands.map(&:dup)
     world.add_cell(new_cell)
-  when Command::SUPPRESS
+  when OpCode::SUPPRESS
     other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
     unless other_cell.nil?
       other_cell.commands.each_with_index do |other_command, i|
@@ -208,25 +203,25 @@ def simulate_cell_cycle(world, cell)
       end
       move_past_inactive_commands(other_cell)
     end
-  when Command::DIE
+  when OpCode::DIE
     world.grid[cell.row][cell.col] = nil
     world.cells.delete(cell)
-  when Command::SENSE_CELL
+  when OpCode::SENSE_CELL
     other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
     cell.register = !(other_cell.nil?)
-  when Command::JUMP_IF_TRUE
+  when OpCode::JUMP_IF_TRUE
     if cell.register
       jump_cell(cell, command.parameters[0])
     end
-  when Command::LABEL
+  when OpCode::LABEL
     return if no_active_commands?(cell)
     advance_program_counter(cell)
     simulate_cell_cycle(world, cell)
-  when Command::SLEEP
+  when OpCode::SLEEP
     # Do nothing
-  when Command::JUMP
+  when OpCode::JUMP
     jump_cell(cell, command.parameters[0])
-  when Command::ACTIVATE
+  when OpCode::ACTIVATE
     other_cell = cell_at_relative_location(world, cell.row, cell.col, command.parameters[0])
     unless other_cell.nil?
       other_cell.commands.each_with_index do |other_command, i|
@@ -242,7 +237,7 @@ end
 
 def no_active_commands?(cell)
   cell.commands.all? do |command|
-    !command.active || command.type == Command::LABEL
+    !command.active || command.type == OpCode::LABEL
   end
 end
 
@@ -255,7 +250,7 @@ end
 
 def move_past_inactive_commands(cell)
   return if no_active_commands?(cell)
-  while !cell.commands[cell.program_counter].active || cell.commands[cell.program_counter].type == Command::LABEL
+  while !cell.commands[cell.program_counter].active || cell.commands[cell.program_counter].type == OpCode::LABEL
     cell.program_counter += 1
     cell.program_counter %= cell.commands.length
   end
@@ -263,7 +258,7 @@ end
 
 def jump_cell(cell, label)
   cell.commands.each_with_index do |command, i|
-    if command.type == Command::LABEL && command.parameters[0] == label
+    if command.type == OpCode::LABEL && command.parameters[0] == label
       cell.program_counter = i
       advance_program_counter(cell)
       return
@@ -280,15 +275,15 @@ end
 
 def relative_location(row, col, direction)
   case direction
-  when Command::UP
+  when Direction::UP
     [row-1, col]
-  when Command::RIGHT
+  when Direction::RIGHT
     [row, col+1]
-  when Command::DOWN
+  when Direction::DOWN
     [row+1, col]
-  when Command::LEFT
+  when Direction::LEFT
     [row, col-1]
-  when Command::SELF
+  when Direction::SELF
     [row, col]
   else
     raise "unkown direction #{command.parameters}"
@@ -309,33 +304,33 @@ def simulate_world_cycle(world)
 end
 
 COLOR_MAP = {
-  '-' => Command::NONE,
-  'R' => Command::RED,
-  'B' => Command::BLUE,
-  'Y' => Command::YELLOW,
-  'G' => Command::GREEN,
-  'P' => Command::PURPLE,
-  'O' => Command::ORANGE,
+  '-' => Color::NONE,
+  'R' => Color::RED,
+  'B' => Color::BLUE,
+  'Y' => Color::YELLOW,
+  'G' => Color::GREEN,
+  'P' => Color::PURPLE,
+  'O' => Color::ORANGE,
 }
 
 COMMAND_MAP = {
-  'SPLIT' => Command::SPLIT,
-  'SUPPRESS' => Command::SUPPRESS,
-  'DIE' => Command::DIE,
-  'SENSE_CELL' => Command::SENSE_CELL,
-  'JUMP_IF_TRUE' => Command::JUMP_IF_TRUE,
-  'LABEL' => Command::LABEL,
-  'SLEEP' => Command::SLEEP,
-  'JUMP' => Command::JUMP,
-  'ACTIVATE' => Command::ACTIVATE,
+  'SPLIT' => OpCode::SPLIT,
+  'SUPPRESS' => OpCode::SUPPRESS,
+  'DIE' => OpCode::DIE,
+  'SENSE_CELL' => OpCode::SENSE_CELL,
+  'JUMP_IF_TRUE' => OpCode::JUMP_IF_TRUE,
+  'LABEL' => OpCode::LABEL,
+  'SLEEP' => OpCode::SLEEP,
+  'JUMP' => OpCode::JUMP,
+  'ACTIVATE' => OpCode::ACTIVATE,
 }
 
 ARGUMENT_MAP = {
-  'UP' => Command::UP,
-  'DOWN' => Command::DOWN,
-  'RIGHT' => Command::RIGHT,
-  'LEFT' => Command::LEFT,
-  'SELF' => Command::SELF,
+  'UP' => Direction::UP,
+  'DOWN' => Direction::DOWN,
+  'RIGHT' => Direction::RIGHT,
+  'LEFT' => Direction::LEFT,
+  'SELF' => Direction::SELF,
 }.merge(COLOR_MAP)
 
 def cell_from_file(program_path)
@@ -349,7 +344,7 @@ def cell_from_file(program_path)
     command_type = COMMAND_MAP[parts[1]]
     raise "unknown command #{parts[1]}" if command_type.nil?
     arguments = parts.drop(2)
-    if command_type != Command::LABEL && command_type != Command::JUMP_IF_TRUE && command_type != Command::JUMP
+    if command_type != OpCode::LABEL && command_type != OpCode::JUMP_IF_TRUE && command_type != OpCode::JUMP
       arguments = arguments.map do |s|
         a = ARGUMENT_MAP[s]
         if a.nil?

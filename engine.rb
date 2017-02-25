@@ -457,13 +457,13 @@ def list_challenges
 end
 
 def list_programs(challenge)
-  Dir.entries("challenges/#{challenge}")
+  Dir.entries("#{challenge_path(challenge)}")
     .reject { |e| e[0] == '.' }
-    .select { |e| File.directory?("challenges/#{challenge}/#{e}") }
+    .select { |e| File.directory?("#{challenge_path(challenge)}/#{e}") }
 end
 
 def leaderboard_path(challenge)
-  "challenges/#{challenge}/leaderboard.txt"
+  "#{challenge_path(challenge)}/leaderboard.txt"
 end
 
 def parse_leaderboard(challenge)
@@ -513,7 +513,7 @@ def update_leaderboard(challenge, program, differences, stable, cycles)
 end
 
 def program_path(challenge, program)
-  "challenges/#{challenge}/#{program}/#{program}.cell"
+  "#{challenge_path(challenge)}/#{program}/#{program}.cell"
 end
 
 def print_leaderboard(challenge, you=nil)

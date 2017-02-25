@@ -94,7 +94,7 @@ A challenge is a target board state, e.g.:
 .. .. .. .. .. .. .. .. ..
 ```
 
-"XX" means a the space contains a cell. ".." means the space is empty. Your program is a "solution" to the challenge if it ever reaches the target board state. Your program is considered a "stable solution" if it remains in that board state for 20 cycles. Programs are ranked according to:
+"XX" means a the space contains a cell. ".." means the space is empty. Your program is a "solution" to the challenge if it ever reaches the target board state. Your program is considered a "stable solution" if it remains in that board state for 10 cycles. Programs are ranked according to:
 1. How many errors they have after 100 cycles, if they are not a solution
 2. Whether or not the solution is stable
 3. How few commands are in the program

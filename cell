@@ -106,7 +106,7 @@ class CLI < Thor
       {
         challenge: challenge,
         program: path,
-        commands: commands_from_file(path).commands.length,
+        commands: commands_from_file(path).length,
         cycles: program_stats[:cycles],
       }
     end.compact.sort_by do |row|

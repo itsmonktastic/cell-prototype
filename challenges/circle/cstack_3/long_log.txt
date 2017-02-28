@@ -574,8 +574,8 @@ B    SUPPRESS(LEFT, BLUE)
 B    SLEEP
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, RED)
-B -> SUPPRESS(RIGHT, BLUE)
-B    SPLIT(LEFT)
+B    SUPPRESS(RIGHT, BLUE)
+B -> SPLIT(LEFT)
 B    SUPPRESS(LEFT, RED)
 B    SUPPRESS(LEFT, BLUE)
 02 (0) (00):
@@ -606,37 +606,6 @@ B    SLEEP
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, RED)
 B    SUPPRESS(RIGHT, BLUE)
-B -> SPLIT(LEFT)
-B    SUPPRESS(LEFT, RED)
-B    SUPPRESS(LEFT, BLUE)
-02 (0) (00):
-B    SLEEP
-B    SPLIT(RIGHT)
-B    SUPPRESS(RIGHT, RED)
-B -> SUPPRESS(RIGHT, BLUE)
-B    SPLIT(LEFT)
-B    SUPPRESS(LEFT, RED)
-B    SUPPRESS(LEFT, BLUE)
-03 (0) (01):
-04 (0) (02):
-05 (0) (00):
-06 (0) (01):
-07 (0) (02):
-08 (0) (00):
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. 06 01 03 .. .. .. 
-.. .. .. 08 .. 05 .. .. .. 
-.. .. .. 07 02 04 .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-.. .. .. .. .. .. .. .. .. 
-01 (0) (00):
-B    SLEEP
-B    SPLIT(RIGHT)
-B    SUPPRESS(RIGHT, RED)
-B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
 B -> SUPPRESS(LEFT, RED)
 B    SUPPRESS(LEFT, BLUE)
@@ -644,8 +613,8 @@ B    SUPPRESS(LEFT, BLUE)
 B    SLEEP
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, RED)
-B    SUPPRESS(RIGHT, BLUE)
-B -> SPLIT(LEFT)
+B -> SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, RED)
 B    SUPPRESS(LEFT, BLUE)
 03 (0) (01):
@@ -676,8 +645,8 @@ B    SLEEP
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, RED)
 B    SUPPRESS(RIGHT, BLUE)
-B    SPLIT(LEFT)
-B -> SUPPRESS(LEFT, RED)
+B -> SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
 B    SUPPRESS(LEFT, BLUE)
 03 (0) (01):
 04 (0) (02):
@@ -697,6 +666,37 @@ B    SUPPRESS(LEFT, BLUE)
 01 (0) (00):
 B -> SLEEP
 B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B    SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+02 (0) (00):
+B    SLEEP
+B    SPLIT(RIGHT)
+B    SUPPRESS(RIGHT, RED)
+B    SUPPRESS(RIGHT, BLUE)
+B    SPLIT(LEFT)
+B -> SUPPRESS(LEFT, RED)
+B    SUPPRESS(LEFT, BLUE)
+03 (0) (01):
+04 (0) (02):
+05 (0) (00):
+06 (0) (01):
+07 (0) (02):
+08 (0) (00):
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. 06 01 03 .. .. .. 
+.. .. .. 08 .. 05 .. .. .. 
+.. .. .. 07 02 04 .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+.. .. .. .. .. .. .. .. .. 
+01 (0) (00):
+B    SLEEP
+B -> SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, RED)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
@@ -727,8 +727,8 @@ B -> SUPPRESS(LEFT, BLUE)
 .. .. .. .. .. .. .. .. .. 
 01 (0) (00):
 B    SLEEP
-B -> SPLIT(RIGHT)
-B    SUPPRESS(RIGHT, RED)
+B    SPLIT(RIGHT)
+B -> SUPPRESS(RIGHT, RED)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, RED)
@@ -759,8 +759,8 @@ B    SUPPRESS(LEFT, BLUE)
 01 (0) (00):
 B    SLEEP
 B    SPLIT(RIGHT)
-B -> SUPPRESS(RIGHT, RED)
-B    SUPPRESS(RIGHT, BLUE)
+B    SUPPRESS(RIGHT, RED)
+B -> SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
 B    SUPPRESS(LEFT, RED)
 B    SUPPRESS(LEFT, BLUE)
@@ -791,8 +791,8 @@ B    SUPPRESS(LEFT, BLUE)
 B    SLEEP
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, RED)
-B -> SUPPRESS(RIGHT, BLUE)
-B    SPLIT(LEFT)
+B    SUPPRESS(RIGHT, BLUE)
+B -> SPLIT(LEFT)
 B    SUPPRESS(LEFT, RED)
 B    SUPPRESS(LEFT, BLUE)
 02 (0) (00):
@@ -823,8 +823,8 @@ B    SLEEP
 B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, RED)
 B    SUPPRESS(RIGHT, BLUE)
-B -> SPLIT(LEFT)
-B    SUPPRESS(LEFT, RED)
+B    SPLIT(LEFT)
+B -> SUPPRESS(LEFT, RED)
 B    SUPPRESS(LEFT, BLUE)
 02 (0) (00):
 B    SLEEP
@@ -855,8 +855,8 @@ B    SPLIT(RIGHT)
 B    SUPPRESS(RIGHT, RED)
 B    SUPPRESS(RIGHT, BLUE)
 B    SPLIT(LEFT)
-B -> SUPPRESS(LEFT, RED)
-B    SUPPRESS(LEFT, BLUE)
+B    SUPPRESS(LEFT, RED)
+B -> SUPPRESS(LEFT, BLUE)
 02 (0) (00):
 B    SLEEP
 B    SPLIT(RIGHT)

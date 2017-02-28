@@ -86,7 +86,7 @@ class Command
 end
 
 class Cell
-  attr_accessor :commands, :id, :program_counter, :is_new, :row, :col, :register, :parent
+  attr_accessor :commands, :id, :program_counter, :is_new, :is_dead, :row, :col, :register, :parent
 
   def initialize(commands:, parent:)
     self.commands = commands
@@ -94,6 +94,7 @@ class Cell
 
     self.program_counter = 0
     self.is_new = true
+    self.is_dead = false
     self.register = false
   end
 
@@ -214,7 +215,7 @@ def simulate_cell_cycle(simulation, cell)
     end
   when OpCode::DIE
     simulation.grid[cell.row][cell.col] = nil
-    simulation.cells.delete(cell)
+    cell.is_dead = true
   when OpCode::SENSE_CELL
     other_cell = cell_at_relative_location(simulation, cell.row, cell.col, command.parameters[0])
     cell.register = !(other_cell.nil?)
@@ -318,6 +319,11 @@ def simulate_cycle(simulation)
         cell.is_new = false
       end 
     end
+  end
+  simulation.cells.select do |cell|
+    cell.is_dead
+  end.each do |cell|
+    simulation.cells.delete(cell)
   end
 end
 

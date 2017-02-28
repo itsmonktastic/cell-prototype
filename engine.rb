@@ -541,5 +541,13 @@ def print_leaderboard(challenge, you=nil)
 end
 
 def current_user
-  File.read('.user').strip if File.file?('.user')
+  ask_for_username unless File.file?('.user')
+  File.read('.user').strip
+end
+
+def ask_for_username
+  puts "Please enter a username:"
+  username = STDIN.readline
+  File.write(".user", username)
+  puts "Saved username in `.user`"
 end

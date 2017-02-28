@@ -4,11 +4,13 @@ This is a game about programming cells to grow into specific shapes and patterns
 
 ## Quickstart
 
+`./cell intro` : Introduces you to the interface
+
 `./cell stats` : lists challenges in guestimated order of difficulty
 
 `./cell describe CHALLENGE` : Prints the target board state for CHALLENGE and a leaderboard of existing programs
 
-`./cell attempt CHALLENGE MY_NAME` : initializes a program for CHALLENGE with the name MY_NAME. Prints out the file where you should write your program. If the file already exists, runs your program and records the run in a log file.
+`./cell attempt CHALLENGE` : initializes a program for CHALLENGE. Prints out the file where you should write your program. If the file already exists, runs your program and records the run in a log file.
 
 ## How cells work
 

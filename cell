@@ -70,6 +70,13 @@ class CLI < Thor
       raise "no exiting challenge named #{challenge}"
     end
 
+    if current_user.nil?
+      puts "Please enter a username:"
+      username = STDIN.readline
+      File.write(".user", username)
+      puts "Saved username in `.user`"
+    end
+
     program = current_user
     unless suffix.nil?
       program += "_#{suffix}"

@@ -539,3 +539,7 @@ def print_leaderboard(challenge, you=nil)
   puts "LEADERBOARD"
   puts table
 end
+
+def current_user
+  File.read('.user').strip if File.file?('.user')
+end

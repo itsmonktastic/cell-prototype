@@ -7,6 +7,29 @@ require 'thor'
 require_relative 'engine.rb'
  
 class CLI < Thor
+  desc "intro", "Get started"
+  def intro
+    if current_user.nil?
+      puts "Please enter a username:"
+      username = STDIN.readline
+      File.write(".user", username)
+      puts "Saved username in `.user`"
+    end
+    puts "Hello, #{current_user}!\n\n"
+
+    puts "For a detailed description on how to write programs take a look at README.md"
+
+    puts "To attempt a challenge named `hello`, run `./cell attempt hello`"
+    puts "This will keep your solution in a file called #{current_user}.cell"
+    puts "\n\n"
+    puts "To save additional solutions, run something like `./cell attempt hello 2`"
+    puts "This will keep your solution in a file called #{current_user}_2.cell"
+
+    puts "\n\n"
+    puts "Here are the available challenges roughly ordered by difficulty:"
+    self.stats
+  end
+
   desc "list", "list names of all challenges"
   def list
     puts list_challenges
@@ -42,9 +65,14 @@ class CLI < Thor
   end
 
   desc "attempt CHALLENGE PROGRAM", "Run PROGRAM on CHALLENGE and measure record results"
-  def attempt(challenge, program)
+  def attempt(challenge, suffix=nil)
     unless list_challenges.include?(challenge)
       raise "no exiting challenge named #{challenge}"
+    end
+
+    program = current_user
+    unless suffix.nil?
+      program += "_#{suffix}"
     end
 
     FileUtils.mkdir_p("#{challenge_path(challenge)}/#{program}")
